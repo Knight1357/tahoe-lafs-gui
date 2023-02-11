@@ -36,6 +36,8 @@
         <rowspec value="top:3dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
         <rowspec value="top:3dlu:noGrow"/>
+        <rowspec value="center:d:grow"/>
+        <rowspec value="top:3dlu:noGrow"/>
         <rowspec value="center:max(d;4px):noGrow"/>
         <colspec value="fill:70px:grow"/>
         <constraints>
@@ -90,7 +92,7 @@
           </component>
           <component id="d85d" class="javax.swing.JButton">
             <constraints>
-              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
               <forms defaultalign-horz="false" defaultalign-vert="false"/>
             </constraints>
             <properties>
@@ -102,6 +104,12 @@
               <verticalAlignment value="0"/>
             </properties>
           </component>
+          <vspacer id="a7553">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+              <forms defaultalign-horz="false" defaultalign-vert="false"/>
+            </constraints>
+          </vspacer>
         </children>
       </grid>
       <grid id="8c122" binding="middlePanel" layout-manager="CardLayout" hgap="0" vgap="0">
