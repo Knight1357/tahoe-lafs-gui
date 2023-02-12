@@ -50,7 +50,20 @@ public class MainWindow extends JFrame {
                 homePageButton.addActionListener(new ActionListener() {
                     @Override
                     public void actionPerformed(ActionEvent e) {
-//                        middlePanel.middleCardPanel
+                        middlePanel.middleCardPanel.removeAll();
+                        middlePanel.middleCardPanel.add(middlePanel.middleCardPanel.homePageCardPanel);
+                        middlePanel.middleCardPanel.repaint();
+                        middlePanel.middleCardPanel.revalidate();
+                    }
+                });
+
+                transmissionButton.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        middlePanel.middleCardPanel.removeAll();
+                        middlePanel.middleCardPanel.add(middlePanel.middleCardPanel.transmissionCardPanel);
+                        middlePanel.middleCardPanel.repaint();
+                        middlePanel.middleCardPanel.revalidate();
                     }
                 });
 
@@ -101,23 +114,25 @@ public class MainWindow extends JFrame {
         }
 
         public class MiddleCardPanel extends JPanel {
-            private HomePageButtonPanel homePageButtonPanel = new HomePageButtonPanel();
+            private CardLayout cardLayout=new CardLayout();
+            private HomePageCardPanel homePageCardPanel = new HomePageCardPanel();
+            private TransmissionCardPanel transmissionCardPanel=new TransmissionCardPanel();
 
             public MiddleCardPanel() {
                 this.setVisible(true);
                 this.setSize(170, 650);
                 this.setPreferredSize(new Dimension(170, 650));
-                this.setLayout(new CardLayout());
+                this.setLayout(cardLayout);
 
-                this.add(homePageButtonPanel);
-//            this.add(new transmissionButtonPanel());
+                this.add("homePageCardPanel",homePageCardPanel);
+                this.add("transmissionCardPanel",transmissionCardPanel);
             }
         }
 
-        private class HomePageButtonPanel extends JPanel {
+        private class HomePageCardPanel extends JPanel {
             private UpButtonPanel upButtonPanel = new UpButtonPanel();
 
-            public HomePageButtonPanel() {
+            public HomePageCardPanel() {
                 this.setVisible(true);
                 this.setPreferredSize(new Dimension(170, 650));
                 this.setLayout(new BorderLayout());
@@ -140,10 +155,10 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private class TransmissionButtonPanel extends JPanel {
+        private class TransmissionCardPanel extends JPanel {
             private UpButtonPanel upButtonPanel = new UpButtonPanel();
 
-            public TransmissionButtonPanel() {
+            public TransmissionCardPanel() {
                 this.setVisible(true);
                 this.setPreferredSize(new Dimension(170, 650));
                 this.setLayout(new BorderLayout());
@@ -178,7 +193,6 @@ public class MainWindow extends JFrame {
                 this.setBackground(Color.CYAN);
                 this.setText(str);
             }
-
         }
     }
 
