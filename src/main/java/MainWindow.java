@@ -3,6 +3,9 @@ import java.awt.*;
 
 public class MainWindow extends JFrame {
 
+    LeftPanel leftPanel=new LeftPanel();
+    MiddlePanel middlePanel=new MiddlePanel();
+
     public MainWindow()
     {
         this.setTitle("Tahoe-Lafs");
@@ -12,9 +15,6 @@ public class MainWindow extends JFrame {
         this.setLocationRelativeTo(null);//设置位置居中
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//设置窗口关闭
         this.setLayout(new BorderLayout());
-
-        LeftPanel leftPanel=new LeftPanel();
-        MiddlePanel middlePanel=new MiddlePanel();
 
        this.add(leftPanel,BorderLayout.WEST);
         this.add(middlePanel,BorderLayout.CENTER);
@@ -30,12 +30,12 @@ public class MainWindow extends JFrame {
             this.setPreferredSize(new Dimension(70,650));
             this.setLayout(new BorderLayout());
 
-            this.add(new LeftUpButtonPanel(),BorderLayout.NORTH);
-            this.add(new LeftDownButtonPanel(),BorderLayout.SOUTH);
+            this.add(new UpButtonPanel(),BorderLayout.NORTH);
+            this.add(new DownButtonPanel(),BorderLayout.SOUTH);
         }
 
-        private class LeftUpButtonPanel extends JPanel{
-            public LeftUpButtonPanel()
+        private class UpButtonPanel extends JPanel{
+            public UpButtonPanel()
             {
                 this.setVisible(true);
                 this.setSize(70,140);
@@ -48,8 +48,8 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private class LeftDownButtonPanel extends JPanel{
-            public LeftDownButtonPanel()
+        private class DownButtonPanel extends JPanel{
+            public DownButtonPanel()
             {
                 this.setVisible(true);
                 this.setSize(70,70);
