@@ -1,77 +1,82 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class MainWindow extends JFrame {
+    private LeftPanel leftPanel = new LeftPanel();
+    private MiddlePanel middlePanel = new MiddlePanel();
 
-    LeftPanel leftPanel=new LeftPanel();
-    MiddlePanel middlePanel=new MiddlePanel();
-
-    public MainWindow()
-    {
+    public MainWindow() {
         this.setTitle("Tahoe-Lafs");
         this.setVisible(true);//设置可视
-        this.setSize(1100,650);
-        this.setMinimumSize(new Dimension(1100,650));
+        this.setSize(1100, 650);
+        this.setMinimumSize(new Dimension(1100, 650));//设置窗口最小尺寸
         this.setLocationRelativeTo(null);//设置位置居中
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//设置窗口关闭
         this.setLayout(new BorderLayout());
 
-       this.add(leftPanel,BorderLayout.WEST);
-        this.add(middlePanel,BorderLayout.CENTER);
+        this.add(leftPanel, BorderLayout.WEST);
+        this.add(middlePanel, BorderLayout.CENTER);
 
     }
 
 
-//左边部分
+    //左边部分
     public class LeftPanel extends JPanel {
-        public LeftPanel()
-        {
+
+        private LeftUpButtonPanel leftUpButtonPanel = new LeftUpButtonPanel();
+        private LeftDownButtonPanel leftDownButtonPanel = new LeftDownButtonPanel();
+
+        public LeftPanel() {
             this.setVisible(true);
-            this.setPreferredSize(new Dimension(70,650));
+            this.setPreferredSize(new Dimension(70, 650));
             this.setLayout(new BorderLayout());
 
-
-            LeftUpButtonPanel leftUpButtonPanel=new LeftUpButtonPanel();
-            LeftDownButtonPanel leftDownButtonPanel=new LeftDownButtonPanel();
-
-            this.add(leftUpButtonPanel,BorderLayout.NORTH);
-            this.add(leftDownButtonPanel,BorderLayout.SOUTH);
+            this.add(leftUpButtonPanel, BorderLayout.NORTH);
+            this.add(leftDownButtonPanel, BorderLayout.SOUTH);
         }
 
-        private class LeftUpButtonPanel extends JPanel{
-            public LeftUpButtonPanel()
-            {
-                this.setVisible(true);
-                this.setSize(70,140);
-                this.setLayout(new GridLayout(2,1,0,0));
+        private class LeftUpButtonPanel extends JPanel {
 
-                LeftButton homePageButton=new LeftButton("首页");
-                LeftButton transmissionButton=new LeftButton("传输");
+            private LeftButton homePageButton = new LeftButton("首页");
+            private LeftButton transmissionButton = new LeftButton("传输");
+
+            public LeftUpButtonPanel() {
+                this.setVisible(true);
+                this.setSize(70, 140);
+                this.setLayout(new GridLayout(2, 1, 0, 0));
+
+                homePageButton.addActionListener(new ActionListener() {
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+//                        middlePanel.middleCardPanel
+                    }
+                });
 
                 this.add(homePageButton);
                 this.add(transmissionButton);
             }
         }
 
-        private class LeftDownButtonPanel extends JPanel{
-            public LeftDownButtonPanel()
-            {
-                this.setVisible(true);
-                this.setSize(70,70);
-                this.setLayout(new GridLayout(1,1,0,0));
+        private class LeftDownButtonPanel extends JPanel {
+            private LeftButton setButton = new LeftButton("设置");
 
-                LeftButton setButton=new LeftButton("设置");
+            public LeftDownButtonPanel() {
+                this.setVisible(true);
+                this.setSize(70, 70);
+                this.setLayout(new GridLayout(1, 1, 0, 0));
+
 
                 this.add(setButton);
             }
         }
 
-        private class LeftButton extends JButton{
-            public LeftButton(String str)
-            {
+        private class LeftButton extends JButton {
+            public LeftButton(String str) {
                 this.setVisible(true);
-                this.setSize(70,70);
-                this.setPreferredSize(new Dimension(70,70));
+                this.setSize(70, 70);
+                this.setPreferredSize(new Dimension(70, 70));
                 this.setBackground(Color.CYAN);
                 this.setText(str);
             }
@@ -79,106 +84,97 @@ public class MainWindow extends JFrame {
     }
 
 
-//中间部分
+    //中间部分
     public class MiddlePanel extends JPanel {
+        private MiddleCardPanel middleCardPanel = new MiddleCardPanel();
+        private RightPanel rightPanel = new RightPanel();
 
-        public MiddlePanel()
-        {
+        public MiddlePanel() {
             this.setVisible(true);
-            this.setSize(170,650);
-            this.setPreferredSize(new Dimension(170,650));
+            this.setSize(170, 650);
+            this.setPreferredSize(new Dimension(170, 650));
             this.setBackground(Color.orange);
             this.setLayout(new BorderLayout());
 
-            MiddleCardPanel middleCardPanel=new MiddleCardPanel();
-            RightPanel rightPanel=new RightPanel();
-
-            this.add(middleCardPanel,BorderLayout.WEST);
-            this.add(rightPanel,BorderLayout.CENTER);
+            this.add(middleCardPanel, BorderLayout.WEST);
+            this.add(rightPanel, BorderLayout.CENTER);
         }
 
-        public   class MiddleCardPanel extends JPanel{
-            public MiddleCardPanel()
-            {
+        public class MiddleCardPanel extends JPanel {
+            private HomePageButtonPanel homePageButtonPanel = new HomePageButtonPanel();
+
+            public MiddleCardPanel() {
                 this.setVisible(true);
-                this.setSize(170,650);
-                this.setPreferredSize(new Dimension(170,650));
+                this.setSize(170, 650);
+                this.setPreferredSize(new Dimension(170, 650));
                 this.setLayout(new CardLayout());
 
-
-                HomePageButtonPanel homePageButtonPanel=new HomePageButtonPanel();
                 this.add(homePageButtonPanel);
 //            this.add(new transmissionButtonPanel());
             }
         }
 
-        private class HomePageButtonPanel extends JPanel{
-            public HomePageButtonPanel()
-            {
+        private class HomePageButtonPanel extends JPanel {
+            private UpButtonPanel upButtonPanel = new UpButtonPanel();
+
+            public HomePageButtonPanel() {
                 this.setVisible(true);
-                this.setPreferredSize(new Dimension(170,650));
+                this.setPreferredSize(new Dimension(170, 650));
                 this.setLayout(new BorderLayout());
 
-                UpButtonPanel upButtonPanel=new UpButtonPanel();
-                this.add(upButtonPanel,BorderLayout.NORTH);
+                this.add(upButtonPanel, BorderLayout.NORTH);
             }
 
-            private class UpButtonPanel extends JPanel{
-                public UpButtonPanel()
-                {
-                    this.setVisible(true);
-                    this.setPreferredSize(new Dimension(170,100));
-                    this.setLayout(new GridLayout(2,1,0,0));
+            private class UpButtonPanel extends JPanel {
+                private MiddleButton myFileButton = new MiddleButton("我的文件");
+                private MiddleButton recyclingStationButton = new MiddleButton("回收站");
 
-                    MiddleButton myFileButton=new MiddleButton("我的文件");
-                    MiddleButton recyclingStationButton=new MiddleButton("回收站");
+                public UpButtonPanel() {
+                    this.setVisible(true);
+                    this.setPreferredSize(new Dimension(170, 100));
+                    this.setLayout(new GridLayout(2, 1, 0, 0));
 
                     this.add(myFileButton);
                     this.add(recyclingStationButton);
-
-
                 }
             }
         }
 
-        private class TransmissionButtonPanel extends JPanel{
-            public TransmissionButtonPanel()
-            {
+        private class TransmissionButtonPanel extends JPanel {
+            private UpButtonPanel upButtonPanel = new UpButtonPanel();
+
+            public TransmissionButtonPanel() {
                 this.setVisible(true);
-                this.setPreferredSize(new Dimension(170,650));
+                this.setPreferredSize(new Dimension(170, 650));
                 this.setLayout(new BorderLayout());
 
-                UpButtonPanel upButtonPanel=new UpButtonPanel();
-                this.add(upButtonPanel,BorderLayout.NORTH);
+                this.add(upButtonPanel, BorderLayout.NORTH);
             }
 
-            private class UpButtonPanel extends JPanel{
-                public UpButtonPanel()
-                {
-                    this.setVisible(true);
-                    this.setPreferredSize(new Dimension(170,150));
-                    this.setLayout(new GridLayout(3,1,0,0));
+            private class UpButtonPanel extends JPanel {
 
-                    MiddleButton uploadingButton=new MiddleButton("正在上传");
-                    MiddleButton downloadingButton=new MiddleButton("正在下载");
-                    MiddleButton downloadCompletedButton=new MiddleButton("下载完成");
+                private MiddleButton uploadingButton = new MiddleButton("正在上传");
+                private MiddleButton downloadingButton = new MiddleButton("正在下载");
+                private MiddleButton downloadCompletedButton = new MiddleButton("下载完成");
+
+                public UpButtonPanel() {
+                    this.setVisible(true);
+                    this.setPreferredSize(new Dimension(170, 150));
+                    this.setLayout(new GridLayout(3, 1, 0, 0));
 
                     this.add(uploadingButton);
                     this.add(downloadingButton);
                     this.add(downloadCompletedButton);
-
-
                 }
             }
 
         }
 
-        private class MiddleButton extends JButton{
-            public MiddleButton(String str)
-            {
+        private class MiddleButton extends JButton {
+            public MiddleButton(String str) {
                 this.setVisible(true);
-                this.setSize(170,50);
-                this.setPreferredSize(new Dimension(170,50));
+                this.setSize(170, 50);
+                this.setPreferredSize(new Dimension(170, 50));
                 this.setBackground(Color.CYAN);
                 this.setText(str);
             }
@@ -187,26 +183,21 @@ public class MainWindow extends JFrame {
     }
 
 
-
-//右部分
+    //右部分
     public class RightPanel extends JPanel {
-        public RightPanel()
-        {
+        public RightPanel() {
             this.setVisible(true);
-            this.setSize(170,650);
-            this.setPreferredSize(new Dimension(170,650));
+            this.setSize(170, 650);
+            this.setPreferredSize(new Dimension(170, 650));
             this.setBackground(Color.PINK);
 
         }
 
 
-
-        private class RightButton extends JButton{
-            public RightButton()
-            {
+        private class RightButton extends JButton {
+            public RightButton() {
                 this.setVisible(true);
             }
         }
-
     }
 }
