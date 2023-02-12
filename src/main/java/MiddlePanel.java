@@ -63,14 +63,14 @@ public class MiddlePanel extends JPanel {
             this.setPreferredSize(new Dimension(170,650));
             this.setLayout(new BorderLayout());
 
-            this.add(new DownButtonPanel(),BorderLayout.NORTH);
+            this.add(new UpButtonPanel(),BorderLayout.NORTH);
         }
 
-        private class DownButtonPanel extends JPanel{
-            public DownButtonPanel()
+        private class UpButtonPanel extends JPanel{
+            public UpButtonPanel()
             {
                 this.setVisible(true);
-                this.setPreferredSize(new Dimension(170,100));
+                this.setPreferredSize(new Dimension(170,150));
                 this.setLayout(new GridLayout(3,1,0,0));
 
                 MiddleButton uploadingButton=new MiddleButton("正在上传");
