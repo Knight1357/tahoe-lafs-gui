@@ -1,0 +1,24 @@
+<changelist name="在变基之前未提交的更改_[变更]" date="1676180068606" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[变更]/shelved.patch" />
+  <option name="DESCRIPTION" value="在变基之前未提交的更改 [变更]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tahoe-Lafs-GUI/LeftPanel.class" />
+    <option name="AFTER_PATH" value="out/production/Tahoe-Lafs-GUI/LeftPanel.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[变更]/LeftPanel.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tahoe-Lafs-GUI/MainWindow.class" />
+    <option name="AFTER_PATH" value="out/production/Tahoe-Lafs-GUI/MainWindow.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[变更]/MainWindow.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tahoe-Lafs-GUI/LeftPanel$LeftButton.class" />
+    <option name="AFTER_PATH" value="out/production/Tahoe-Lafs-GUI/LeftPanel$LeftButton.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[变更]/LeftPanel$LeftButton.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tahoe-Lafs-GUI/MiddlePanel$MiddleButton.class" />
+    <option name="AFTER_PATH" value="out/production/Tahoe-Lafs-GUI/MiddlePanel$MiddleButton.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[变更]/MiddlePanel$MiddleButton.class" />
+  </binary>
+</changelist>
