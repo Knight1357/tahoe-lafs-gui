@@ -23,7 +23,8 @@ public class MiddlePanel extends JPanel {
             this.setPreferredSize(new Dimension(170,650));
             this.setLayout(new CardLayout());
 
-            this.add(new homePageButtonPanel());
+//            this.add(new homePageButtonPanel());
+            this.add(new transmissionButtonPanel());
         }
     }
 
