@@ -30,12 +30,16 @@ public class MainWindow extends JFrame {
             this.setPreferredSize(new Dimension(70,650));
             this.setLayout(new BorderLayout());
 
-            this.add(new UpButtonPanel(),BorderLayout.NORTH);
-            this.add(new DownButtonPanel(),BorderLayout.SOUTH);
+
+            LeftUpButtonPanel leftUpButtonPanel=new LeftUpButtonPanel();
+            LeftDownButtonPanel leftDownButtonPanel=new LeftDownButtonPanel();
+
+            this.add(leftUpButtonPanel,BorderLayout.NORTH);
+            this.add(leftDownButtonPanel,BorderLayout.SOUTH);
         }
 
-        private class UpButtonPanel extends JPanel{
-            public UpButtonPanel()
+        private class LeftUpButtonPanel extends JPanel{
+            public LeftUpButtonPanel()
             {
                 this.setVisible(true);
                 this.setSize(70,140);
@@ -43,19 +47,21 @@ public class MainWindow extends JFrame {
 
                 LeftButton homePageButton=new LeftButton("首页");
                 LeftButton transmissionButton=new LeftButton("传输");
+
                 this.add(homePageButton);
                 this.add(transmissionButton);
             }
         }
 
-        private class DownButtonPanel extends JPanel{
-            public DownButtonPanel()
+        private class LeftDownButtonPanel extends JPanel{
+            public LeftDownButtonPanel()
             {
                 this.setVisible(true);
                 this.setSize(70,70);
                 this.setLayout(new GridLayout(1,1,0,0));
 
                 LeftButton setButton=new LeftButton("设置");
+
                 this.add(setButton);
             }
         }
@@ -99,19 +105,22 @@ public class MainWindow extends JFrame {
                 this.setPreferredSize(new Dimension(170,650));
                 this.setLayout(new CardLayout());
 
-                this.add(new homePageButtonPanel());
+
+                HomePageButtonPanel homePageButtonPanel=new HomePageButtonPanel();
+                this.add(homePageButtonPanel);
 //            this.add(new transmissionButtonPanel());
             }
         }
 
-        private class homePageButtonPanel extends JPanel{
-            public homePageButtonPanel()
+        private class HomePageButtonPanel extends JPanel{
+            public HomePageButtonPanel()
             {
                 this.setVisible(true);
                 this.setPreferredSize(new Dimension(170,650));
                 this.setLayout(new BorderLayout());
 
-                this.add(new UpButtonPanel(),BorderLayout.NORTH);
+                UpButtonPanel upButtonPanel=new UpButtonPanel();
+                this.add(upButtonPanel,BorderLayout.NORTH);
             }
 
             private class UpButtonPanel extends JPanel{
@@ -132,14 +141,15 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private class transmissionButtonPanel extends JPanel{
-            public transmissionButtonPanel()
+        private class TransmissionButtonPanel extends JPanel{
+            public TransmissionButtonPanel()
             {
                 this.setVisible(true);
                 this.setPreferredSize(new Dimension(170,650));
                 this.setLayout(new BorderLayout());
 
-                this.add(new UpButtonPanel(),BorderLayout.NORTH);
+                UpButtonPanel upButtonPanel=new UpButtonPanel();
+                this.add(upButtonPanel,BorderLayout.NORTH);
             }
 
             private class UpButtonPanel extends JPanel{

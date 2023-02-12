@@ -6,10 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftDownButtonPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftUpButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftButton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$MiddleButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$MiddleButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$MiddleCardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$MiddleCardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$homePageButtonPanel$UpButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$homePageButtonPanel$UpButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$homePageButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$homePageButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$transmissionButtonPanel$UpButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$transmissionButtonPanel$UpButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$transmissionButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$transmissionButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainWindow.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676181806769</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="update">
+      <created>1676183120167</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676183120167</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
