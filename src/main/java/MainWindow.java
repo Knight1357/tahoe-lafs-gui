@@ -19,12 +19,10 @@ public class MainWindow extends JFrame {
        this.add(leftPanel,BorderLayout.WEST);
         this.add(middlePanel,BorderLayout.CENTER);
 
-
-
     }
 
 
-
+//左边部分
     public class LeftPanel extends JPanel {
         public LeftPanel()
         {
@@ -75,7 +73,7 @@ public class MainWindow extends JFrame {
     }
 
 
-
+//中间部分
     public class MiddlePanel extends JPanel {
 
         public MiddlePanel()
@@ -180,7 +178,7 @@ public class MainWindow extends JFrame {
 
 
 
-
+//右部分
     public class RightPanel extends JPanel {
         public RightPanel()
         {
@@ -201,9 +199,4 @@ public class MainWindow extends JFrame {
         }
 
     }
-
-
-
-
-
 }
