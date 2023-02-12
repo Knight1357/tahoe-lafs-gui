@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LeftPanel extends JPanel {
     public LeftPanel()
@@ -7,7 +9,6 @@ public class LeftPanel extends JPanel {
         this.setVisible(true);
         this.setPreferredSize(new Dimension(70,650));
         this.setLayout(new BorderLayout());
-
 
         this.add(new LeftUpButtonPanel(),BorderLayout.NORTH);
         this.add(new LeftDownButtonPanel(),BorderLayout.SOUTH);
@@ -21,6 +22,13 @@ public class LeftPanel extends JPanel {
             this.setLayout(new GridLayout(2,1,0,0));
 
             LeftButton homePageButton=new LeftButton("首页");
+            homePageButton.addActionListener(new ActionListener() {
+                @Override
+                public void actionPerformed(ActionEvent e) {
+
+                }
+            });
+
             LeftButton transmissionButton=new LeftButton("传输");
             this.add(homePageButton);
             this.add(transmissionButton);

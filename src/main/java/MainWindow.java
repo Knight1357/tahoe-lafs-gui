@@ -13,9 +13,11 @@ public class MainWindow extends JFrame {
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//设置窗口关闭
         this.setLayout(new BorderLayout());
 
+        LeftPanel leftPanel=new LeftPanel();
+        MiddlePanel middlePanel=new MiddlePanel();
 
-       this.add(new LeftPanel(),BorderLayout.WEST);
-        this.add(new MiddlePanel(),BorderLayout.CENTER);
+       this.add(leftPanel,BorderLayout.WEST);
+        this.add(middlePanel,BorderLayout.CENTER);
 
 
 

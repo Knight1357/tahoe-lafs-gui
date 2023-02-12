@@ -11,11 +11,14 @@ public class MiddlePanel extends JPanel {
         this.setBackground(Color.orange);
         this.setLayout(new BorderLayout());
 
-        this.add(new MiddleCardPanel(),BorderLayout.WEST);
-        this.add(new RightPanel(),BorderLayout.CENTER);
+        MiddleCardPanel middleCardPanel=new MiddleCardPanel();
+        RightPanel rightPanel=new RightPanel();
+
+        this.add(middleCardPanel,BorderLayout.WEST);
+        this.add(rightPanel,BorderLayout.CENTER);
     }
 
-    private  class MiddleCardPanel extends JPanel{
+    public   class MiddleCardPanel extends JPanel{
         public MiddleCardPanel()
         {
             this.setVisible(true);
@@ -23,8 +26,8 @@ public class MiddlePanel extends JPanel {
             this.setPreferredSize(new Dimension(170,650));
             this.setLayout(new CardLayout());
 
-//            this.add(new homePageButtonPanel());
-            this.add(new transmissionButtonPanel());
+            this.add(new homePageButtonPanel());
+//            this.add(new transmissionButtonPanel());
         }
     }
 
