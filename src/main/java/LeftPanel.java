@@ -18,7 +18,6 @@ public class LeftPanel extends JPanel {
         {
             this.setVisible(true);
             this.setSize(70,140);
-//            this.setLayout(new GridLayout(2,1,0,0));
             this.setLayout(new GridLayout(2,1,0,0));
 
             LeftButton homePageButton=new LeftButton("首页");
@@ -33,7 +32,6 @@ public class LeftPanel extends JPanel {
         {
             this.setVisible(true);
             this.setSize(70,70);
-//            this.setLayout(new GridLayout(2,1,0,0));
             this.setLayout(new GridLayout(1,1,0,0));
 
             LeftButton setButton=new LeftButton("设置");
