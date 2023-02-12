@@ -11,6 +11,8 @@ public class RightPanel extends JPanel {
 
     }
 
+
+
     private class RightButton extends JButton{
         public RightButton()
         {
