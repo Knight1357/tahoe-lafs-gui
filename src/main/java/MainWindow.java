@@ -54,6 +54,8 @@ public class MainWindow extends JFrame {
                         middlePanel.middleCardPanel.add(middlePanel.middleCardPanel.homePageCardPanel);
                         middlePanel.middleCardPanel.repaint();
                         middlePanel.middleCardPanel.revalidate();
+
+
                     }
                 });
 
