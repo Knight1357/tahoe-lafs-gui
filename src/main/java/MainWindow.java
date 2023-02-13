@@ -1,13 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.util.Set;
 
 public class MainWindow extends JFrame {
-    private LeftPanel leftPanel = new LeftPanel();
-    private MiddlePanel middlePanel = new MiddlePanel();
-
+    private final MiddlePanel middlePanel = new MiddlePanel();
     public MainWindow() {
         this.setTitle("Tahoe-Lafs");
         this.setVisible(true);//设置可视
@@ -17,6 +12,7 @@ public class MainWindow extends JFrame {
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//设置窗口关闭
         this.setLayout(new BorderLayout());
 
+        LeftPanel leftPanel = new LeftPanel();
         this.add(leftPanel, BorderLayout.WEST);
         this.add(middlePanel, BorderLayout.CENTER);
 
@@ -25,48 +21,41 @@ public class MainWindow extends JFrame {
 
     //左边部分
     public class LeftPanel extends JPanel {
-        private LeftUpButtonPanel leftUpButtonPanel = new LeftUpButtonPanel();
-        private LeftDownButtonPanel leftDownButtonPanel = new LeftDownButtonPanel();
 
         public LeftPanel() {
             this.setVisible(true);
             this.setPreferredSize(new Dimension(70, 650));
             this.setLayout(new BorderLayout());
 
+            LeftUpButtonPanel leftUpButtonPanel = new LeftUpButtonPanel();
             this.add(leftUpButtonPanel, BorderLayout.NORTH);
+            LeftDownButtonPanel leftDownButtonPanel = new LeftDownButtonPanel();
             this.add(leftDownButtonPanel, BorderLayout.SOUTH);
         }
 
         private class LeftUpButtonPanel extends JPanel {
-
-            private LeftButton homePageButton = new LeftButton("首页");
-            private LeftButton transmissionButton = new LeftButton("传输");
 
             public LeftUpButtonPanel() {
                 this.setVisible(true);
                 this.setSize(70, 140);
                 this.setLayout(new GridLayout(2, 1, 0, 0));
 
-                homePageButton.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        middlePanel.middleCardPanel.removeAll();
-                        middlePanel.middleCardPanel.add(middlePanel.middleCardPanel.homePageCardPanel);
-                        middlePanel.middleCardPanel.repaint();
-                        middlePanel.middleCardPanel.revalidate();
+                LeftButton homePageButton = new LeftButton("首页");
+                homePageButton.addActionListener(e -> {
+                    middlePanel.middleCardPanel.removeAll();
+                    middlePanel.middleCardPanel.add(middlePanel.middleCardPanel.homePageCardPanel);
+                    middlePanel.middleCardPanel.repaint();
+                    middlePanel.middleCardPanel.revalidate();
 
 
-                    }
                 });
 
-                transmissionButton.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        middlePanel.middleCardPanel.removeAll();
-                        middlePanel.middleCardPanel.add(middlePanel.middleCardPanel.transmissionCardPanel);
-                        middlePanel.middleCardPanel.repaint();
-                        middlePanel.middleCardPanel.revalidate();
-                    }
+                LeftButton transmissionButton = new LeftButton("传输");
+                transmissionButton.addActionListener(e -> {
+                    middlePanel.middleCardPanel.removeAll();
+                    middlePanel.middleCardPanel.add(middlePanel.middleCardPanel.transmissionCardPanel);
+                    middlePanel.middleCardPanel.repaint();
+                    middlePanel.middleCardPanel.revalidate();
                 });
 
                 this.add(homePageButton);
@@ -75,7 +64,6 @@ public class MainWindow extends JFrame {
         }
 
         private class LeftDownButtonPanel extends JPanel {
-            private LeftButton setButton = new LeftButton("设置");
 
             //            private SetDialog setDialog=new SetDialog();
             public LeftDownButtonPanel() {
@@ -83,12 +71,8 @@ public class MainWindow extends JFrame {
                 this.setSize(70, 70);
                 this.setLayout(new GridLayout(1, 1, 0, 0));
 
-                setButton.addActionListener(new ActionListener() {
-                    @Override
-                    public void actionPerformed(ActionEvent e) {
-                        new SetDialog();
-                    }
-                });
+                LeftButton setButton = new LeftButton("设置");
+                setButton.addActionListener(e -> new SetDialog());
 
                 this.add(setButton);
             }
@@ -118,9 +102,8 @@ public class MainWindow extends JFrame {
 
 
     //中间部分
-    public class MiddlePanel extends JPanel {
-        private MiddleCardPanel middleCardPanel = new MiddleCardPanel();
-        private RightPanel rightPanel = new RightPanel();
+    public static class MiddlePanel extends JPanel {
+        private final MiddleCardPanel middleCardPanel = new MiddleCardPanel();
 
         public MiddlePanel() {
             this.setVisible(true);
@@ -130,18 +113,19 @@ public class MainWindow extends JFrame {
             this.setLayout(new BorderLayout());
 
             this.add(middleCardPanel, BorderLayout.WEST);
+            RightPanel rightPanel = new RightPanel();
             this.add(rightPanel, BorderLayout.CENTER);
         }
 
-        public class MiddleCardPanel extends JPanel {
-            private CardLayout cardLayout = new CardLayout();
-            private HomePageCardPanel homePageCardPanel = new HomePageCardPanel();
-            private TransmissionCardPanel transmissionCardPanel = new TransmissionCardPanel();
+        public static class MiddleCardPanel extends JPanel {
+            private final HomePageCardPanel homePageCardPanel = new HomePageCardPanel();
+            private final TransmissionCardPanel transmissionCardPanel = new TransmissionCardPanel();
 
             public MiddleCardPanel() {
                 this.setVisible(true);
                 this.setSize(170, 650);
                 this.setPreferredSize(new Dimension(170, 650));
+                CardLayout cardLayout = new CardLayout();
                 this.setLayout(cardLayout);
 
                 this.add("homePageCardPanel", homePageCardPanel);
@@ -149,63 +133,62 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private class HomePageCardPanel extends JPanel {
-            private UpButtonPanel upButtonPanel = new UpButtonPanel();
+        private static class HomePageCardPanel extends JPanel {
 
             public HomePageCardPanel() {
                 this.setVisible(true);
                 this.setPreferredSize(new Dimension(170, 650));
                 this.setLayout(new BorderLayout());
 
+                UpButtonPanel upButtonPanel = new UpButtonPanel();
                 this.add(upButtonPanel, BorderLayout.NORTH);
             }
 
-            private class UpButtonPanel extends JPanel {
-                private MiddleButton myFileButton = new MiddleButton("我的文件");
-                private MiddleButton recyclingStationButton = new MiddleButton("回收站");
+            private static class UpButtonPanel extends JPanel {
 
                 public UpButtonPanel() {
                     this.setVisible(true);
                     this.setPreferredSize(new Dimension(170, 100));
                     this.setLayout(new GridLayout(2, 1, 0, 0));
 
+                    MiddleButton myFileButton = new MiddleButton("我的文件");
                     this.add(myFileButton);
+                    MiddleButton recyclingStationButton = new MiddleButton("回收站");
                     this.add(recyclingStationButton);
                 }
             }
         }
 
-        private class TransmissionCardPanel extends JPanel {
-            private UpButtonPanel upButtonPanel = new UpButtonPanel();
+        private static class TransmissionCardPanel extends JPanel {
 
             public TransmissionCardPanel() {
                 this.setVisible(true);
                 this.setPreferredSize(new Dimension(170, 650));
                 this.setLayout(new BorderLayout());
 
+                UpButtonPanel upButtonPanel = new UpButtonPanel();
                 this.add(upButtonPanel, BorderLayout.NORTH);
             }
 
-            private class UpButtonPanel extends JPanel {
-
-                private MiddleButton uploadingButton = new MiddleButton("正在上传");
-                private MiddleButton downloadingButton = new MiddleButton("正在下载");
-                private MiddleButton downloadCompletedButton = new MiddleButton("下载完成");
+            private static class UpButtonPanel extends JPanel {
 
                 public UpButtonPanel() {
                     this.setVisible(true);
                     this.setPreferredSize(new Dimension(170, 150));
                     this.setLayout(new GridLayout(3, 1, 0, 0));
 
+                    MiddleButton uploadingButton = new MiddleButton("正在上传");
                     this.add(uploadingButton);
+                    MiddleButton downloadingButton = new MiddleButton("正在下载");
                     this.add(downloadingButton);
+                    MiddleButton downloadCompletedButton = new MiddleButton("下载完成");
                     this.add(downloadCompletedButton);
                 }
             }
 
         }
 
-        private class MiddleButton extends JButton {
+        private static class MiddleButton extends JButton {
             public MiddleButton(String str) {
                 this.setVisible(true);
                 this.setSize(170, 50);
@@ -217,116 +200,112 @@ public class MainWindow extends JFrame {
 
 
     //右部分
-    public class RightPanel extends JPanel {
-        private BorderLayout borderLayout = new BorderLayout();
-
-        private UpRightCardPanel upRightCardPanel = new UpRightCardPanel();
-        private DownRightCardPanel downRightCardPanel = new DownRightCardPanel();
+    public static class RightPanel extends JPanel {
 
         public RightPanel() {
             this.setVisible(true);
             this.setSize(860, 650);
             this.setPreferredSize(new Dimension(860, 650));
+            BorderLayout borderLayout = new BorderLayout();
             this.setLayout(borderLayout);
             this.setBackground(Color.PINK);
 
+            UpRightCardPanel upRightCardPanel = new UpRightCardPanel();
             this.add(upRightCardPanel, BorderLayout.NORTH);
+            DownRightCardPanel downRightCardPanel = new DownRightCardPanel();
             this.add(downRightCardPanel, BorderLayout.CENTER);
         }
 
-        private class UpRightCardPanel extends JPanel {
-            private CardLayout cardLayout = new CardLayout();
-            private HomePageCardPanel homePageCardPanel = new HomePageCardPanel();
-            private TransmissionCardPanel transmissionCardPanel = new TransmissionCardPanel();
+        private static class UpRightCardPanel extends JPanel {
 
             public UpRightCardPanel() {
                 this.setVisible(true);
                 this.setSize(860, 40);
                 this.setPreferredSize(new Dimension(860, 40));
+                CardLayout cardLayout = new CardLayout();
                 this.setLayout(cardLayout);
 
+                HomePageCardPanel homePageCardPanel = new HomePageCardPanel();
                 this.add(homePageCardPanel);
+                TransmissionCardPanel transmissionCardPanel = new TransmissionCardPanel();
                 this.add(transmissionCardPanel);
             }
 
-            private class HomePageCardPanel extends JPanel {
-                private BorderLayout borderLayout = new BorderLayout();
-                private ButtonPanel buttonPanel = new ButtonPanel();
+            private static class HomePageCardPanel extends JPanel {
 
                 public HomePageCardPanel() {
                     this.setVisible(true);
                     this.setSize(860, 40);
                     this.setPreferredSize(new Dimension(860, 40));
+                    BorderLayout borderLayout = new BorderLayout();
                     this.setLayout(borderLayout);
                     this.setBackground(Color.PINK);
 
 
+                    ButtonPanel buttonPanel = new ButtonPanel();
                     this.add(buttonPanel, BorderLayout.WEST);
                 }
 
-                private class ButtonPanel extends JPanel {
-                    private GridLayout gridLayout = new GridLayout(1, 2, 0, 0);
-
-                    private RightButton upLoadFileButton = new RightButton("上传文件");
-                    private RightButton newFolderButton = new RightButton("新建文件夹");
+                private static class ButtonPanel extends JPanel {
 
                     public ButtonPanel() {
                         this.setVisible(true);
                         this.setSize(220, 40);
                         this.setPreferredSize(new Dimension(220, 40));
+                        GridLayout gridLayout = new GridLayout(1, 2, 0, 0);
                         this.setLayout(gridLayout);
 
 
+                        RightButton upLoadFileButton = new RightButton("上传文件");
                         this.add(upLoadFileButton);
+                        RightButton newFolderButton = new RightButton("新建文件夹");
                         this.add(newFolderButton);
                     }
                 }
             }
 
-            private class TransmissionCardPanel extends JPanel {
-                private BorderLayout borderLayout = new BorderLayout();
-                private ButtonPanel buttonPanel = new ButtonPanel();
+            private static class TransmissionCardPanel extends JPanel {
 
                 public TransmissionCardPanel() {
                     this.setVisible(true);
                     this.setSize(860, 40);
                     this.setPreferredSize(new Dimension(860, 40));
+                    BorderLayout borderLayout = new BorderLayout();
                     this.setLayout(borderLayout);
                     this.setBackground(Color.PINK);
 
 
+                    ButtonPanel buttonPanel = new ButtonPanel();
                     this.add(buttonPanel, BorderLayout.WEST);
                 }
 
-                private class ButtonPanel extends JPanel {
-                    private GridLayout gridLayout = new GridLayout(1, 3, 0, 0);
-
-                    private RightButton allPauseButton = new RightButton("全部暂停");
-                    private RightButton allStartButton = new RightButton("全部开始");
-
-                    private RightButton allDeleteButton = new RightButton("全部输出");
+                private static class ButtonPanel extends JPanel {
 
                     public ButtonPanel() {
                         this.setVisible(true);
                         this.setSize(220, 40);
                         this.setPreferredSize(new Dimension(220, 40));
+                        GridLayout gridLayout = new GridLayout(1, 3, 0, 0);
                         this.setLayout(gridLayout);
 
+                        RightButton allPauseButton = new RightButton("全部暂停");
                         this.add(allPauseButton);
+                        RightButton allStartButton = new RightButton("全部开始");
                         this.add(allStartButton);
+                        RightButton allDeleteButton = new RightButton("全部输出");
                         this.add(allDeleteButton);
                     }
                 }
             }
         }
 
-        private class DownRightCardPanel extends JPanel {
-            private CardLayout cardLayout = new CardLayout();
+        private static class DownRightCardPanel extends JPanel {
 
             public DownRightCardPanel() {
                 this.setVisible(true);
                 this.setSize(860, 600);
                 this.setPreferredSize(new Dimension(860, 600));
+                CardLayout cardLayout = new CardLayout();
                 this.setLayout(cardLayout);
                 this.setBackground(Color.CYAN);
 
@@ -334,7 +313,7 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private class RightButton extends JButton {
+        private static class RightButton extends JButton {
             public RightButton(String str) {
                 this.setVisible(true);
                 this.setVisible(true);
