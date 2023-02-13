@@ -364,8 +364,6 @@ public class MainWindow extends JFrame {
                 CardLayout cardLayout = new CardLayout();
                 this.setLayout(cardLayout);
                 this.setBackground(Color.CYAN);
-
-
             }
         }
 
