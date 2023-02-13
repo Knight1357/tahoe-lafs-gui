@@ -3,7 +3,7 @@ import java.awt.*;
 
 public class MainWindow extends JFrame {
     private final MiddlePanel middlePanel = new MiddlePanel();
-    public MainWindow() {
+    public MainWindow() {//主窗口
         this.setTitle("Tahoe-Lafs");
         this.setVisible(true);//设置可视
         this.setSize(1100, 650);
@@ -22,7 +22,7 @@ public class MainWindow extends JFrame {
     //左边部分
     public class LeftPanel extends JPanel {
 
-        public LeftPanel() {
+        public LeftPanel() {//左边块
             this.setVisible(true);
             this.setPreferredSize(new Dimension(70, 650));
             this.setLayout(new BorderLayout());
@@ -33,8 +33,7 @@ public class MainWindow extends JFrame {
             this.add(leftDownButtonPanel, BorderLayout.SOUTH);
         }
 
-        private class LeftUpButtonPanel extends JPanel {
-
+        private class LeftUpButtonPanel extends JPanel {//左边窗口上部分按钮块
             public LeftUpButtonPanel() {
                 this.setVisible(true);
                 this.setSize(70, 140);
@@ -63,7 +62,7 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private class LeftDownButtonPanel extends JPanel {
+        private class LeftDownButtonPanel extends JPanel {//左边窗口下部分按钮块
 
             //            private SetDialog setDialog=new SetDialog();
             public LeftDownButtonPanel() {
@@ -77,7 +76,7 @@ public class MainWindow extends JFrame {
                 this.add(setButton);
             }
 
-            public class SetDialog extends JDialog {
+            public class SetDialog extends JDialog {//设置按钮弹窗
                 public SetDialog() {
                     this.setTitle("设置");
                     this.setVisible(true);//设置可视
@@ -89,7 +88,7 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private class LeftButton extends JButton {
+        private class LeftButton extends JButton {//左边部分按钮设置
             public LeftButton(String str) {
                 this.setVisible(true);
                 this.setSize(70, 70);
@@ -102,9 +101,8 @@ public class MainWindow extends JFrame {
 
 
     //中间部分
-    public static class MiddlePanel extends JPanel {
+    public static class MiddlePanel extends JPanel {//窗口中间部分块
         private final MiddleCardPanel middleCardPanel = new MiddleCardPanel();
-
         public MiddlePanel() {
             this.setVisible(true);
             this.setSize(170, 650);
@@ -117,7 +115,7 @@ public class MainWindow extends JFrame {
             this.add(rightPanel, BorderLayout.CENTER);
         }
 
-        public static class MiddleCardPanel extends JPanel {
+        public static class MiddleCardPanel extends JPanel {//中间部分card块容器
             private final HomePageCardPanel homePageCardPanel = new HomePageCardPanel();
             private final TransmissionCardPanel transmissionCardPanel = new TransmissionCardPanel();
 
@@ -133,7 +131,7 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private static class HomePageCardPanel extends JPanel {
+        private static class HomePageCardPanel extends JPanel {//中间首页部分card块
 
             public HomePageCardPanel() {
                 this.setVisible(true);
@@ -144,7 +142,7 @@ public class MainWindow extends JFrame {
                 this.add(upButtonPanel, BorderLayout.NORTH);
             }
 
-            private static class UpButtonPanel extends JPanel {
+            private static class UpButtonPanel extends JPanel {//窗口中间上部分按钮块
 
                 public UpButtonPanel() {
                     this.setVisible(true);
@@ -159,7 +157,7 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private static class TransmissionCardPanel extends JPanel {
+        private static class TransmissionCardPanel extends JPanel {//中间传输card块
 
             public TransmissionCardPanel() {
                 this.setVisible(true);
@@ -170,7 +168,7 @@ public class MainWindow extends JFrame {
                 this.add(upButtonPanel, BorderLayout.NORTH);
             }
 
-            private static class UpButtonPanel extends JPanel {
+            private static class UpButtonPanel extends JPanel {//窗口中间上部分按钮块
 
                 public UpButtonPanel() {
                     this.setVisible(true);
@@ -188,7 +186,7 @@ public class MainWindow extends JFrame {
 
         }
 
-        private static class MiddleButton extends JButton {
+        private static class MiddleButton extends JButton {//窗口中间部分按钮设置
             public MiddleButton(String str) {
                 this.setVisible(true);
                 this.setSize(170, 50);
@@ -200,8 +198,7 @@ public class MainWindow extends JFrame {
 
 
     //右部分
-    public static class RightPanel extends JPanel {
-
+    public static class RightPanel extends JPanel {//窗口右边部分
         public RightPanel() {
             this.setVisible(true);
             this.setSize(860, 650);
@@ -210,15 +207,15 @@ public class MainWindow extends JFrame {
             this.setLayout(borderLayout);
             this.setBackground(Color.PINK);
 
-            UpRightCardPanel upRightCardPanel = new UpRightCardPanel();
-            this.add(upRightCardPanel, BorderLayout.NORTH);
-            DownRightCardPanel downRightCardPanel = new DownRightCardPanel();
-            this.add(downRightCardPanel, BorderLayout.CENTER);
+            RightUpCardPanel rightUpCardPanel = new RightUpCardPanel();
+            this.add(rightUpCardPanel, BorderLayout.NORTH);
+            RightDownCardPanel rightDownCardPanel = new RightDownCardPanel();
+            this.add(rightDownCardPanel, BorderLayout.CENTER);
         }
 
-        private static class UpRightCardPanel extends JPanel {
+        private static class RightUpCardPanel extends JPanel {//窗口右边部分上部分Card容器
 
-            public UpRightCardPanel() {
+            public RightUpCardPanel() {
                 this.setVisible(true);
                 this.setSize(860, 40);
                 this.setPreferredSize(new Dimension(860, 40));
@@ -231,7 +228,7 @@ public class MainWindow extends JFrame {
                 this.add(transmissionCardPanel);
             }
 
-            private static class HomePageCardPanel extends JPanel {
+            private static class HomePageCardPanel extends JPanel {//窗口右边上部分首页card
 
                 public HomePageCardPanel() {
                     this.setVisible(true);
@@ -264,7 +261,7 @@ public class MainWindow extends JFrame {
                 }
             }
 
-            private static class TransmissionCardPanel extends JPanel {
+            private static class TransmissionCardPanel extends JPanel {//窗口右边上部分传输card块
 
                 public TransmissionCardPanel() {
                     this.setVisible(true);
@@ -299,9 +296,9 @@ public class MainWindow extends JFrame {
             }
         }
 
-        private static class DownRightCardPanel extends JPanel {
+        private static class RightDownCardPanel extends JPanel {
 
-            public DownRightCardPanel() {
+            public RightDownCardPanel() {
                 this.setVisible(true);
                 this.setSize(860, 600);
                 this.setPreferredSize(new Dimension(860, 600));
