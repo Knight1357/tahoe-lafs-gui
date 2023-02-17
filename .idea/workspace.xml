@@ -4,7 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update" />
+    <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md " beforeDir="false" afterPath="$PROJECT_DIR$/README.md " afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftDownButtonPanel$SetDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftDownButtonPanel$SetDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftDownButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftDownButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftUpButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel$LeftUpButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$LeftPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$HomePageCardPanel$UpButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$HomePageCardPanel$UpButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$HomePageCardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$HomePageCardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$MiddleButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$MiddleButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$MiddleCardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$MiddleCardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$TransmissionCardPanel$UpButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$TransmissionCardPanel$UpButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$TransmissionCardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel$TransmissionCardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$MiddlePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightDownCardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightDownCardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel$HomePageCardPanel$ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel$HomePageCardPanel$ButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel$HomePageCardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel$HomePageCardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel$TransmissionCardPanel$ButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel$TransmissionCardPanel$ButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel$TransmissionCardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel$TransmissionCardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel$RightUpCardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow$RightPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TahoeLafs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,9 +62,6 @@
       </UrlAndAccount>
     </option>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/src/main/java/main.java" root0="FORCE_HIGHLIGHTING" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -57,7 +82,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.main">
+  <component name="RunManager" selected="应用程序.TahoeLafs">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Tahoe-Lafs-GUI" />
@@ -65,8 +90,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TahoeLafs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TahoeLafs" />
+      <module name="Tahoe-Lafs-GUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
+      <option name="MAIN_CLASS_NAME" value="main.main" />
       <module name="Tahoe-Lafs-GUI" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TahoeLafs" />
         <item itemvalue="应用程序.main" />
         <item itemvalue="应用程序.Main" />
       </list>
@@ -382,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676609091682</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="update">
+      <created>1676609439459</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1676609439459</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

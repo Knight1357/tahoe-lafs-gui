@@ -1,9 +1,15 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class MainWindow extends JFrame {
+
+public class TahoeLafs {
+    public static void main(String[] args) {
+        MainWindow mainWindow=new MainWindow();
+    }
+}
+
+class MainWindow extends JFrame {
+
     private final MiddlePanel middlePanel = new MiddlePanel();
     public MainWindow() {//主窗口
         this.setTitle("Tahoe-Lafs");
@@ -265,7 +271,7 @@ public class MainWindow extends JFrame {
             this.setPreferredSize(new Dimension(860, 650));
             BorderLayout borderLayout = new BorderLayout();
             this.setLayout(borderLayout);
-            this.setBackground(Color.PINK);
+//            this.setBackground(Color.PINK);
 
             this.add(rightUpCardPanel, BorderLayout.NORTH);
             this.add(rightDownCardPanel, BorderLayout.CENTER);
@@ -295,7 +301,7 @@ public class MainWindow extends JFrame {
                     this.setPreferredSize(new Dimension(860, 40));
                     BorderLayout borderLayout = new BorderLayout();
                     this.setLayout(borderLayout);
-                    this.setBackground(Color.PINK);
+//                    this.setBackground(Color.PINK);
 
 
                     ButtonPanel buttonPanel = new ButtonPanel();
@@ -328,7 +334,7 @@ public class MainWindow extends JFrame {
                     this.setPreferredSize(new Dimension(860, 40));
                     BorderLayout borderLayout = new BorderLayout();
                     this.setLayout(borderLayout);
-                    this.setBackground(Color.PINK);
+//                    this.setBackground(Color.PINK);
 
 
                     ButtonPanel buttonPanel = new ButtonPanel();
@@ -363,7 +369,7 @@ public class MainWindow extends JFrame {
                 this.setPreferredSize(new Dimension(860, 600));
                 CardLayout cardLayout = new CardLayout();
                 this.setLayout(cardLayout);
-                this.setBackground(Color.CYAN);
+                this.setBackground(Color.PINK);
             }
         }
 
