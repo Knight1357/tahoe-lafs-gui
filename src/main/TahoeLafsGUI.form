@@ -18,7 +18,7 @@
         </properties>
         <border type="none"/>
         <children>
-          <grid id="774e9" binding="File" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="1">
+          <grid id="774e9" binding="FileType" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="1">
             <constraints border-constraint="North"/>
             <properties>
               <name value=""/>
@@ -99,12 +99,12 @@
               </grid>
             </children>
           </grid>
-          <grid id="a83d0" layout-manager="BorderLayout" hgap="0" vgap="0">
+          <scrollpane id="4e48a" binding="FileListScroll">
             <constraints border-constraint="Center"/>
             <properties/>
             <border type="none"/>
             <children/>
-          </grid>
+          </scrollpane>
         </children>
       </grid>
     </children>
