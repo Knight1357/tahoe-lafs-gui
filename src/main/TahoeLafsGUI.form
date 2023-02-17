@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="TahoeLafsGUI">
+  <grid id="27dc6" binding="MainWindows" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="1100" height="650"/>
+    </constraints>
+    <properties>
+      <minimumSize width="1100" height="650"/>
+      <opaque value="true"/>
+      <preferredSize width="1100" height="650"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="b5259" binding="Left" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="West"/>
+        <properties>
+          <preferredSize width="170" height="650"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="774e9" binding="File" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="1">
+            <constraints border-constraint="North"/>
+            <properties>
+              <name value=""/>
+              <preferredSize width="170" height="100"/>
+              <toolTipText value=""/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="60a08" class="javax.swing.JButton" binding="Myfile">
+                <constraints/>
+                <properties>
+                  <preferredSize width="170" height="50"/>
+                  <text value="我的文件"/>
+                </properties>
+              </component>
+              <component id="1d45" class="javax.swing.JButton" binding="Recycle">
+                <constraints/>
+                <properties>
+                  <preferredSize width="170" height="50"/>
+                  <text value="回收站"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="ea317" binding="Set" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="1">
+            <constraints border-constraint="South"/>
+            <properties>
+              <preferredSize width="170" height="50"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="56236" class="javax.swing.JButton" binding="Seting">
+                <constraints/>
+                <properties>
+                  <preferredSize width="170" height="50"/>
+                  <text value="设置"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+      <grid id="bb360" binding="Right" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="67469" binding="Function" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties>
+              <preferredSize width="0" height="40"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="62856" binding="FileManagement" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="0">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <preferredSize width="240" height="40"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="f15d0" class="javax.swing.JButton" binding="Upload">
+                    <constraints/>
+                    <properties>
+                      <preferredSize width="120" height="40"/>
+                      <text value="上传文件"/>
+                    </properties>
+                  </component>
+                  <component id="8fc42" class="javax.swing.JButton" binding="NewFile">
+                    <constraints/>
+                    <properties>
+                      <actionCommand value=""/>
+                      <preferredSize width="120" height="40"/>
+                      <text value="新建文件"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="a83d0" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="Center"/>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
