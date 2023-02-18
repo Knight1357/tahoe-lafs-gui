@@ -100,8 +100,12 @@
             </children>
           </grid>
           <scrollpane id="4e48a" binding="FileListScroll">
-            <constraints border-constraint="Center"/>
-            <properties/>
+            <constraints border-constraint="West"/>
+            <properties>
+              <minimumSize width="930" height="300"/>
+              <preferredSize width="930" height="300"/>
+              <visible value="true"/>
+            </properties>
             <border type="none"/>
             <children/>
           </scrollpane>
