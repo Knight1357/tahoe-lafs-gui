@@ -5,8 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/config/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/control/FileOperate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/FileList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/FileListModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/FileListRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/FileNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/MouseRightPopupMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftPanel$LeftButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftPanel$LeftDownButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftPanel$LeftUpButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MiddlePanel$MiddleButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MiddlePanel$MiddleCardPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MiddlePanel$homePageButtonPanel$UpButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MiddlePanel$homePageButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MiddlePanel$transmissionButtonPanel$UpButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MiddlePanel$transmissionButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MiddlePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel$RightButton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/LeftPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/LeftPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/RightPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +80,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;全局库&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
@@ -215,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676731712547</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="update">
+      <created>1676769140904</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676769140904</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

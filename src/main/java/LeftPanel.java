@@ -3,52 +3,57 @@ import java.awt.*;
 
 public class LeftPanel extends JPanel {
 
-    public LeftPanel()
-    {
+    public LeftPanel() {
         this.setVisible(true);
-        this.setSize(170,650);
-        this.setPreferredSize(new Dimension(170,650));
+        this.setSize(170, 650);
+        this.setPreferredSize(new Dimension(170, 650));
         this.setBackground(Color.orange);
         this.setLayout(new BorderLayout());
     }
 }
 
 class LeftDownButtonPanel extends JPanel {
-    public LeftDownButtonPanel()
-    {
+    public LeftDownButtonPanel() {
         this.setVisible(true);
-        this.setPreferredSize(new Dimension(170,150));
-        this.setLayout(new GridLayout(2,1,0,0));
+        this.setPreferredSize(new Dimension(170, 50));
+        this.setLayout(new GridLayout(1, 1, 0, 0));
     }
 }
 
 class LeftUpButtonPanel extends JPanel {
-    public LeftUpButtonPanel()
-    {
+    public LeftUpButtonPanel() {
         this.setVisible(true);
-        this.setPreferredSize(new Dimension(170,150));
-        this.setLayout(new GridLayout(2,1,0,0));
+        this.setPreferredSize(new Dimension(170, 100));
+        this.setLayout(new GridLayout(2, 1, 0, 0));
     }
 }
 
 
 class LeftButton extends JButton {
-    public LeftButton(String str)
-    {
+    public LeftButton(String str) {
         this.setVisible(true);
-        this.setSize(170,50);
-        this.setPreferredSize(new Dimension(170,50));
+        this.setSize(170, 50);
+        this.setPreferredSize(new Dimension(170, 50));
         this.setBackground(Color.CYAN);
         this.setText(str);
     }
 }
 
-class LeftMyFile extends LeftButton{
-
-
-    public LeftMyFile(String str) {
+class LeftMyFileButton extends LeftButton {
+    public LeftMyFileButton(String str) {
         super(str);
+    }
+}
 
+class LeftRecycelButton extends LeftButton {
+    public LeftRecycelButton(String str) {
+        super(str);
+    }
+}
+
+class LeftSetButton extends LeftButton {
+    public LeftSetButton(String str) {
+        super(str);
     }
 }
 
