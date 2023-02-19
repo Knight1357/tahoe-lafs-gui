@@ -22,6 +22,8 @@ public class TahoeLafs {
     public static RightBackButton rightBackButton=new RightBackButton();
     public static RightBeforeButton rightBeforeButton =new RightBeforeButton();
     public  static  RightUploadButton rightUploadButton = new RightUploadButton("上传文件");
+
+    public  static RightDownLoadButton rightDownLoadButton=new RightDownLoadButton("下载文件");
     public static  RightNewfileButton rightNewfileButton = new RightNewfileButton("新建文件夹");
 
     public static  FileListModel<FileNode> fileListModel = new FileListModel<>();
@@ -42,6 +44,7 @@ public class TahoeLafs {
         rightPanel.add(rightUpPanel, BorderLayout.NORTH);
         rightUpPanel.add(rightUpLeftButtonPanel, BorderLayout.WEST);
         rightUpLeftButtonPanel.add(rightUploadButton);
+        rightUpLeftButtonPanel.add(rightDownLoadButton);
         rightUpLeftButtonPanel.add(rightNewfileButton);
         rightUpPanel.add(rightControlButtonPanel,BorderLayout.EAST);
         rightControlButtonPanel.add(rightBackButton);
@@ -64,7 +67,7 @@ public class TahoeLafs {
         for(File f:files)
         {
             FileNode temp = new FileNode(f);
-//            System.out.println(temp.file.getName());
+            System.out.println(temp.name);
             list.add(temp);
         }
         list.sort(new Comparator<FileNode>() {
@@ -89,7 +92,6 @@ public class TahoeLafs {
                 fileListModel.addElement(f);
         }
     }
-
 
 
     public static void main(String[] args) {

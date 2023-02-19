@@ -37,7 +37,7 @@ class RightUpLeftButtonPanel extends JPanel {
         this.setSize(240, 40);
         this.setPreferredSize(new Dimension(240, 40));
 //        this.setBackground(Color.PINK);
-        this.setLayout(new GridLayout(1, 2, 0, 0));
+        this.setLayout(new GridLayout(1, 3, 0, 0));
     }
 }
 
@@ -68,7 +68,23 @@ class RightUploadButton extends RightButton {
             System.out.println(file.getAbsolutePath());
         }
     }
+}
 
+class RightDownLoadButton extends RightButton {
+    public RightDownLoadButton(String str) {
+        super(str);
+        this.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("下载文件");
+                DownLoadFile();
+            }
+        });
+    }
+    private void DownLoadFile()
+    {
+
+    }
 }
 
 class RightNewfileButton extends RightButton {

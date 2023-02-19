@@ -25,15 +25,19 @@ public class FileList<T> extends JList<T> {
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                if(e.getButton()== MouseEvent.BUTTON1)//左键
+                if(e.getButton()== MouseEvent.BUTTON1&&e.getClickCount()==2)//左键
+                {
                     OpenDir(e);
+                }
                 else if(e.getButton()== MouseEvent.BUTTON3)//右键
+                {
                     FileListRightClicked(e);
+                }
             }
         });
     }
 
-    private void OpenDir(MouseEvent e)//左键事件
+    private void OpenDir(MouseEvent e)//左键打开文件
     {
         int index = this.locationToIndex(e.getPoint());
 
@@ -43,11 +47,22 @@ public class FileList<T> extends JList<T> {
             this.setSelectedIndex(index);
         }
         FileNode fileNode=TahoeLafs.fileListModel.getElementAt(index);
-        TahoeLafs.LoadDir(fileNode.file);
-        System.out.println("左键点中了"+index+" ");
 
-        Constant.LASTPATH=Constant.NOWPATH;
-        Constant.NOWPATH=fileNode.file;
+        if(fileNode.isDir)
+        {
+            TahoeLafs.LoadDir(fileNode.file);
+            System.out.println("左键点中了"+index+" ");
+
+            Constant.LASTPATH=Constant.NOWPATH;
+            Constant.NOWPATH=fileNode.file;
+        }
+        else
+        {
+            FileOperate.viewFile(fileNode);
+        }
+
+
+
     }
     private void FileListRightClicked(MouseEvent e)//右键事件
     {
