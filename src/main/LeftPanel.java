@@ -9,7 +9,7 @@ public class LeftPanel extends JPanel {
         this.setVisible(true);
         this.setSize(170, 650);
         this.setPreferredSize(new Dimension(170, 650));
-        this.setBackground(Color.orange);
+//        this.setBackground(Color.orange);
         this.setLayout(new BorderLayout());
     }
 }

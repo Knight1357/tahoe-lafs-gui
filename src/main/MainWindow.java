@@ -11,6 +11,5 @@ public class MainWindow extends JFrame {
         this.setLocationRelativeTo(null);//设置位置居中
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//设置窗口关闭
         this.setLayout(new BorderLayout());
-
     }
 }

@@ -6,18 +6,13 @@ public class FileNode {
     File file;
     String name;
     Icon icon;
+
+    boolean isDir=false;
     public FileNode(File file)
     {
         this.file=file;
         this.name=file.getName();
-//        if(this.name.indexOf('.')==-1)
-//        {
-//            icon=new ImageIcon("/Users/liushen/Library/CloudStorage/OneDrive-个人/works/Tahoe-Lafs-GUI/Tahoe-Lafs-GUI/image/wenjianjia.png");
-//        }
-//        else
-//        {
-//            icon=new ImageIcon("/Users/liushen/Library/CloudStorage/OneDrive-个人/works/Tahoe-Lafs-GUI/Tahoe-Lafs-GUI/image/wenjian.png");
-//        }
+        this.isDir=file.isDirectory();
     }
 
     @Override

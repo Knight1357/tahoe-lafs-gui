@@ -10,7 +10,9 @@ public class FileListRenderer extends DefaultListCellRenderer {
             int index,
             boolean isSelected,
             boolean cellHasFocus) {
+        setPreferredSize(new Dimension(100,50));
         FileList fileList=(FileList) list;
+
         setText(value.toString());
         ImageIcon imageIcon;
         if(value.toString().indexOf('.')!=-1) {
@@ -24,10 +26,10 @@ public class FileListRenderer extends DefaultListCellRenderer {
         imageIcon.setImage(img);
         setIcon(imageIcon);
 
+        setOpaque(true);
         if(isSelected) {		//当某个元素被选中时
             setForeground(Color.WHITE);		//设置前景色（文字颜色）为白色
             setBackground(Color.LIGHT_GRAY);		//设置背景色为蓝色
-            System.out.println(index+"被选中");
         } else {		//某个元素未被选中时（取消选中）
             setForeground(Color.BLACK);		//设置前景色（文字颜色）为黑色
             setBackground(Color.WHITE);		//设置背景色为白色
