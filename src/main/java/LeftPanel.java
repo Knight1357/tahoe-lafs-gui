@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class LeftPanel extends JPanel {
 
@@ -42,20 +44,58 @@ class LeftButton extends JButton {
 class LeftMyFileButton extends LeftButton {
     public LeftMyFileButton(String str) {
         super(str);
+        this.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("我的文件");
+            }
+        });
     }
 }
 
 class LeftRecycelButton extends LeftButton {
     public LeftRecycelButton(String str) {
         super(str);
+        this.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("回收站");
+            }
+        });
     }
 }
 
 class LeftSetButton extends LeftButton {
     public LeftSetButton(String str) {
         super(str);
+        this.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.out.println("设置");
+                new SetDialog();
+            }
+        });
     }
 }
+
+class SetDialog extends JDialog{
+    public SetDialog()
+    {
+        this.setTitle("设置");
+        this.setVisible(true);
+        this.setMinimumSize(new Dimension(300,300));
+        this.setPreferredSize(new Dimension(300,300));
+        this.setLocationRelativeTo(null);//设置位置居中
+        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);//设置窗口关闭
+        //add one label
+        Container contentPane = this.getContentPane();
+        JLabel jLabel = new JLabel("再容器中添加标签");
+        contentPane.add(jLabel);
+        //center 居中
+        jLabel.setHorizontalAlignment(SwingConstants.CENTER);
+    }
+}
+
 
 
 

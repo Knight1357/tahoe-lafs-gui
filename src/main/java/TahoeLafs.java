@@ -1,25 +1,24 @@
-import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 
-public class main {
-    MainWindow mainWindow = new MainWindow();
-    LeftPanel leftPanel = new LeftPanel();
-    LeftUpButtonPanel leftUpButtonPanel = new LeftUpButtonPanel();
-    LeftDownButtonPanel leftDownButtonPanel = new LeftDownButtonPanel();
-    LeftMyFileButton leftMyFileButton = new LeftMyFileButton("我的文件");
-    LeftRecycelButton leftRecycelButton = new LeftRecycelButton("回收站");
-    LeftSetButton leftSetButton = new LeftSetButton("设置");
-    RightPanel rightPanel = new RightPanel();
-    RightUpPanel rightUpPanel = new RightUpPanel();
-    RightScorllPane rightScorllPane = new RightScorllPane();
-    RightUpLeftButtonPanel rightUpLeftButtonPanel = new RightUpLeftButtonPanel();
-    RightUploadButton rightUploadButton = new RightUploadButton("上传文件");
-    RightNewfileButton rightNewfileButton = new RightNewfileButton("新建文件夹");
+public class TahoeLafs {
+   public MainWindow mainWindow = new MainWindow();
+    public LeftPanel leftPanel = new LeftPanel();
+    public  LeftUpButtonPanel leftUpButtonPanel = new LeftUpButtonPanel();
+    public  LeftDownButtonPanel leftDownButtonPanel = new LeftDownButtonPanel();
+    public LeftMyFileButton leftMyFileButton = new LeftMyFileButton("我的文件");
+    public  LeftRecycelButton leftRecycelButton = new LeftRecycelButton("回收站");
+    public  LeftSetButton leftSetButton = new LeftSetButton("设置");
+    public  RightPanel rightPanel = new RightPanel();
+    public RightUpPanel rightUpPanel = new RightUpPanel();
+    public  RightScorllPane rightScorllPane = new RightScorllPane();
+    public RightUpLeftButtonPanel rightUpLeftButtonPanel = new RightUpLeftButtonPanel();
+    public  RightUploadButton rightUploadButton = new RightUploadButton("上传文件");
+    public RightNewfileButton rightNewfileButton = new RightNewfileButton("新建文件夹");
 
-    FileListModel<FileNode> fileListModel = new FileListModel<>();
-    FileListRenderer fileListRenderer = new FileListRenderer();
-    FileList<FileNode> fileList = new FileList<>();
+    public FileListModel<FileNode> fileListModel = new FileListModel<>();
+    public FileListRenderer fileListRenderer = new FileListRenderer();
+    public FileList<FileNode> fileList = new FileList<>();
 
 
     public void Init()//初始化窗口
@@ -62,6 +61,6 @@ public class main {
 
 
     public static void main(String[] args) {
-        new main().Init();
+        new TahoeLafs().Init();
     }
 }
