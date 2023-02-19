@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/Constant.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileListRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileListRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileOperate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileOperate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightNewfileButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightNewfileButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightScorllPane.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightScorllPane.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightUpLeftButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightUpLeftButtonPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightUpPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightUpPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightUploadButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightUploadButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/FileNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FileNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,18 +52,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -80,9 +72,16 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.TahoeLafs">
     <configuration name="TahoeLafs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TahoeLafs" />
+      <module name="Tahoe-Lafs-GUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="Tahoe-Lafs-GUI" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,6 +90,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.TahoeLafs" />
+        <item itemvalue="应用程序.Test" />
         <item itemvalue="应用程序.TahoeLafs" />
       </list>
     </recent_temporary>
@@ -265,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676808512644</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="update">
+      <created>1676808673545</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1676808673545</updated>
+    </task>
+    <task id="LOCAL-00025" summary="update">
+      <created>1676809166196</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1676809166196</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
