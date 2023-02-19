@@ -48,6 +48,7 @@ class LeftMyFile extends LeftButton{
 
     public LeftMyFile(String str) {
         super(str);
+
     }
 }
 
