@@ -36,8 +36,7 @@ public class FileList<T> extends JList<T> {
             }
         });
     }
-
-    private void OpenDir(MouseEvent e)//左键打开文件
+    public void OpenDir(MouseEvent e)//左键打开文件
     {
         int index = this.locationToIndex(e.getPoint());
 
@@ -64,7 +63,7 @@ public class FileList<T> extends JList<T> {
 
 
     }
-    private void FileListRightClicked(MouseEvent e)//右键事件
+    public void FileListRightClicked(MouseEvent e)//右键事件
     {
         int index = this.locationToIndex(e.getPoint());
 
@@ -75,6 +74,8 @@ public class FileList<T> extends JList<T> {
         //弹出菜单
         MouseRightPopupMenu mouseRightPopupMenu=new MouseRightPopupMenu();
         mouseRightPopupMenu.show(e.getComponent(),e.getX(),e.getY());
+
+
     }
 }
 
