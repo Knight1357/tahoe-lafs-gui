@@ -1,0 +1,9 @@
+<changelist name="在变基之前未提交的更改_[变更]2" date="1676964488748" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[变更]2/shelved.patch" />
+  <option name="DESCRIPTION" value="在变基之前未提交的更改 [变更]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tahoe-Lafs-GUI/FileOperate.class" />
+    <option name="AFTER_PATH" value="out/production/Tahoe-Lafs-GUI/FileOperate.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在变基之前未提交的更改_[变更]2/FileOperate.class" />
+  </binary>
+</changelist>
