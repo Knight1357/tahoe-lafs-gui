@@ -1,10 +1,17 @@
 import javax.swing.*;
-import java.io.File;
 
 public class TahoeLafsGUI {
     private JPanel MainWindows;
     private JPanel UpPanel;
-    private JScrollPane DownScrollPanel;
+    private JPanel InformationPanel;
+    private JPanel OperationPanel;
+    private JPanel SearchPanel;
+    private JPanel FileOperationPanel;
+    private JButton SearchButton;
+    private JTextField textField1;
+    private JButton UploadButton;
+    private JButton DownloadButton;
+    private JButton CreateDIrButton;
 
 
     public static void main(String[] args) {

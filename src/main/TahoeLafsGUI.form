@@ -11,21 +11,109 @@
     </properties>
     <border type="none"/>
     <children>
-      <grid id="1fdd5" binding="UpPanel" layout-manager="GridBagLayout">
+      <grid id="1fdd5" binding="UpPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
         <constraints border-constraint="North"/>
         <properties>
+          <alignmentX value="0.0"/>
+          <alignmentY value="0.0"/>
           <minimumSize width="900" height="100"/>
           <preferredSize width="900" height="100"/>
         </properties>
         <border type="none"/>
-        <children/>
+        <children>
+          <grid id="28f2c" binding="OperationPanel" layout-manager="FlowLayout" hgap="0" vgap="0" flow-align="1">
+            <constraints border-constraint="West"/>
+            <properties>
+              <preferredSize width="400" height="40"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="3c7eb" binding="SearchPanel" layout-manager="FlowLayout" hgap="10" vgap="5" flow-align="1">
+                <constraints/>
+                <properties>
+                  <preferredSize width="400" height="40"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="35f35" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                    <constraints/>
+                    <properties>
+                      <preferredSize width="300" height="30"/>
+                    </properties>
+                  </component>
+                  <component id="df843" class="javax.swing.JButton" binding="SearchButton">
+                    <constraints/>
+                    <properties>
+                      <text value="查找"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="6ab2b" binding="FileOperationPanel" layout-manager="FlowLayout" hgap="10" vgap="5" flow-align="0">
+                <constraints/>
+                <properties>
+                  <preferredSize width="400" height="40"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="771c5" class="javax.swing.JButton" binding="UploadButton">
+                    <constraints/>
+                    <properties>
+                      <label value="上传文件"/>
+                      <text value="上传文件"/>
+                    </properties>
+                  </component>
+                  <component id="d1a9d" class="javax.swing.JButton" binding="DownloadButton">
+                    <constraints/>
+                    <properties>
+                      <actionCommand value="下载文件"/>
+                      <label value="下载文件"/>
+                      <text value="下载文件"/>
+                    </properties>
+                  </component>
+                  <component id="af636" class="javax.swing.JButton" binding="CreateDIrButton">
+                    <constraints/>
+                    <properties>
+                      <label value="新建文件"/>
+                      <text value="新建文件"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="da1e9" binding="InformationPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="South"/>
+            <properties>
+              <preferredSize width="0" height="20"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="35cb7" class="javax.swing.JLabel">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <text value="Label"/>
+                </properties>
+              </component>
+              <component id="84a20" class="javax.swing.JLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <preferredSize width="40" height="20"/>
+                  <text value="文件名"/>
+                  <verticalAlignment value="0"/>
+                </properties>
+              </component>
+              <grid id="b6218" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="East"/>
+                <properties/>
+                <border type="none"/>
+                <children/>
+              </grid>
+            </children>
+          </grid>
+        </children>
       </grid>
-      <scrollpane id="aa001" binding="DownScrollPanel">
-        <constraints border-constraint="Center"/>
-        <properties/>
-        <border type="none"/>
-        <children/>
-      </scrollpane>
     </children>
   </grid>
 </form>

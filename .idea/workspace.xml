@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafsGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafsGUI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TahoeLafsGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TahoeLafsGUI.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TahoeLafsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TahoeLafsGUI.java" afterDir="false" />
     </list>
@@ -54,14 +56,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "239",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "4",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.keymap"
+    "settings.editor.selected.configurable": "editor.preferences.tabs"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="应用程序.TahoeLafsGUI">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Tahoe-Lafs-GUI" />
@@ -99,9 +101,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TahoeLafsGUI" />
         <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.Test" />
-        <item itemvalue="应用程序.TahoeLafsGUI" />
         <item itemvalue="应用程序.TahoeLafs" />
         <item itemvalue="应用程序.main" />
       </list>
@@ -115,13 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675935786951</updated>
-    </task>
-    <task id="LOCAL-00001" summary="test">
-      <created>1675939285012</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1675939285012</updated>
     </task>
     <task id="LOCAL-00002" summary="test">
       <created>1675939433934</created>
@@ -459,7 +454,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676618420136</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="update">
+      <created>1677033051993</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1677033051994</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
