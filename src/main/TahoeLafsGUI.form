@@ -28,7 +28,7 @@
             </properties>
             <border type="none"/>
             <children>
-              <grid id="3c7eb" binding="SearchPanel" layout-manager="FlowLayout" hgap="10" vgap="5" flow-align="1">
+              <grid id="3c7eb" binding="SearchPanel" layout-manager="FlowLayout" hgap="10" vgap="2" flow-align="1">
                 <constraints/>
                 <properties>
                   <preferredSize width="400" height="40"/>
@@ -38,19 +38,20 @@
                   <component id="35f35" class="javax.swing.JTextField" binding="textField1" default-binding="true">
                     <constraints/>
                     <properties>
-                      <preferredSize width="300" height="30"/>
+                      <preferredSize width="300" height="35"/>
                     </properties>
                   </component>
                   <component id="df843" class="javax.swing.JButton" binding="SearchButton">
                     <constraints/>
                     <properties>
+                      <preferredSize width="78" height="35"/>
                       <text value="查找"/>
                       <verticalAlignment value="0"/>
                     </properties>
                   </component>
                 </children>
               </grid>
-              <grid id="6ab2b" binding="FileOperationPanel" layout-manager="FlowLayout" hgap="10" vgap="5" flow-align="0">
+              <grid id="6ab2b" binding="FileOperationPanel" layout-manager="FlowLayout" hgap="10" vgap="2" flow-align="0">
                 <constraints/>
                 <properties>
                   <preferredSize width="400" height="40"/>
@@ -61,6 +62,8 @@
                     <constraints/>
                     <properties>
                       <label value="上传文件"/>
+                      <maximumSize width="86" height="35"/>
+                      <preferredSize width="86" height="35"/>
                       <text value="上传文件"/>
                     </properties>
                   </component>
@@ -69,6 +72,7 @@
                     <properties>
                       <actionCommand value="下载文件"/>
                       <label value="下载文件"/>
+                      <preferredSize width="86" height="35"/>
                       <text value="下载文件"/>
                     </properties>
                   </component>
@@ -76,6 +80,7 @@
                     <constraints/>
                     <properties>
                       <label value="新建文件"/>
+                      <preferredSize width="86" height="35"/>
                       <text value="新建文件"/>
                     </properties>
                   </component>
@@ -90,25 +95,37 @@
             </properties>
             <border type="none"/>
             <children>
-              <component id="35cb7" class="javax.swing.JLabel">
-                <constraints border-constraint="Center"/>
-                <properties>
-                  <text value="Label"/>
-                </properties>
-              </component>
-              <component id="84a20" class="javax.swing.JLabel">
+              <grid id="b6218" binding="FileNamePanel" layout-manager="FlowLayout" hgap="40" vgap="0" flow-align="0">
                 <constraints border-constraint="West"/>
                 <properties>
-                  <preferredSize width="40" height="20"/>
-                  <text value="文件名"/>
-                  <verticalAlignment value="0"/>
+                  <preferredSize width="400" height="16"/>
                 </properties>
-              </component>
-              <grid id="b6218" layout-manager="BorderLayout" hgap="0" vgap="0">
-                <constraints border-constraint="East"/>
-                <properties/>
                 <border type="none"/>
-                <children/>
+                <children>
+                  <component id="35cb7" class="javax.swing.JLabel" binding="FileName">
+                    <constraints/>
+                    <properties>
+                      <text value="文件名"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="fa353" binding="AttributePanel" layout-manager="FlowLayout" hgap="40" vgap="0" flow-align="0">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <preferredSize width="420" height="20"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="84a20" class="javax.swing.JLabel" binding="FIleSize">
+                    <constraints/>
+                    <properties>
+                      <preferredSize width="40" height="20"/>
+                      <text value="大小"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                </children>
               </grid>
             </children>
           </grid>

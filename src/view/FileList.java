@@ -7,13 +7,13 @@ public class FileList<T> extends JList<T> {
     {
         if(true)
         {
-            MouseListener[] a=this.getMouseListeners();
-            for(MouseListener i:a)
-                this.removeMouseListener(i);
+            MouseListener[] aaa=this.getMouseListeners();
+            for(MouseListener a:aaa)
+                this.removeMouseListener(a);
 
-            MouseMotionListener[] b=this.getMouseMotionListeners();
-            for(MouseMotionListener i:b)
-                this.removeMouseMotionListener(i);;
+            MouseMotionListener[] bbb=this.getMouseMotionListeners();
+            for(MouseMotionListener b:bbb)
+                this.removeMouseMotionListener(b);;
 
         }
     }

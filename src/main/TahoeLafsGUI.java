@@ -12,6 +12,10 @@ public class TahoeLafsGUI {
     private JButton UploadButton;
     private JButton DownloadButton;
     private JButton CreateDIrButton;
+    private JLabel FileName;
+    private JPanel AttributePanel;
+    private JPanel FileNamePanel;
+    private JLabel FIleSize;
 
 
     public static void main(String[] args) {
