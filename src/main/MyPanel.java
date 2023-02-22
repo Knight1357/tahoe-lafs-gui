@@ -4,23 +4,39 @@ import java.awt.*;
 class MyPanel extends JPanel {
     public MyPanel() {
         this.setVisible(true);
-        this.setBackground(Color.PINK);
+//        this.setBackground(Color.PINK);
         this.setLayout(new BorderLayout());
     }
 }
 
+class UpPanel extends  JPanel{
+    public UpPanel()
+    {
+        this.setVisible(true);
+        this.setSize(900,100);
+        this.setPreferredSize(new Dimension(900,100));
+        this.setBackground(Color.PINK);
+
+    }
+
+}
+
 class SearchPanel extends JPanel {
     public SearchPanel() {
+
     }
 }
 
 class ButtonPanel extends JPanel{
+    public ButtonPanel()
+    {
 
+    }
 }
 
 
-class MyScorllPane extends JScrollPane {
-    public MyScorllPane() {
+class DownScorllPanel extends JScrollPane {
+    public DownScorllPanel() {
         this.setVisible(true);
     }
 }

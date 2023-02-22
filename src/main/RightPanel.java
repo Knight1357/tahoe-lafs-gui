@@ -8,7 +8,7 @@ import java.io.File;
 public class RightPanel extends JPanel {
     public RightPanel() {
         this.setVisible(true);
-        this.setBackground(Color.PINK);
+//        this.setBackground(Color.PINK);
         this.setLayout(new BorderLayout());
     }
 }

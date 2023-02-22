@@ -5,29 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
-      <change afterPath="$PROJECT_DIR$/src/main/MyPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileList$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileOperate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileOperate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftDownButtonPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftMyFileButton$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftMyFileButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftRecycelButton$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftRecycelButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftSetButton$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftSetButton.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/LeftUpButtonPanel.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SetDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/LeftPanel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MyPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/RightPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TahoeLafs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TahoeLafs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/FileList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FileList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +324,21 @@
       <option name="project" value="LOCAL" />
       <updated>1676964823441</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update">
+      <created>1677031524072</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1677031524072</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update">
+      <created>1677031670669</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1677031670669</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

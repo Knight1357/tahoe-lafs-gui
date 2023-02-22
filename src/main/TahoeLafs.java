@@ -7,7 +7,9 @@ import java.util.Comparator;
 public class TahoeLafs {
    public static MainWindow mainWindow = new MainWindow();
    public static MyPanel myPanel=new MyPanel();
-   public static MyScorllPane myScorllPane =new MyScorllPane();
+   public static DownScorllPanel downScorllPanel =new DownScorllPanel();
+
+   public static UpPanel upPanel =new UpPanel();
 
 
 
@@ -18,6 +20,9 @@ public class TahoeLafs {
     public void Init()//初始化窗口
     {
         mainWindow.add(myPanel);
+        myPanel.add(upPanel,BorderLayout.NORTH);
+        myPanel.add(downScorllPanel,BorderLayout.CENTER);
+
 
 
 
