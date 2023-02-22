@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="框架 没有按钮">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/ButtonPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileOperate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileOperate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileScrollPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SearchPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SearchPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/UpPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/UpPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/DownPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/DownPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/TahoeLafs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TahoeLafs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/UpPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UpPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/FileList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FileList.java" afterDir="false" />
+    <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="无按钮事件">
+      <change afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/DownPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/InformationPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/OperateButtonPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/UpButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileList.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -369,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677052870792</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="框架 没有按钮">
+      <created>1677055482652</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1677055482652</updated>
+    </task>
+    <task id="LOCAL-00039" summary="无按钮事件">
+      <created>1677055532841</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1677055532841</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -388,6 +395,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="update" />
     <MESSAGE value="框架 没有按钮" />
-    <option name="LAST_COMMIT_MESSAGE" value="框架 没有按钮" />
+    <MESSAGE value="无按钮事件" />
+    <option name="LAST_COMMIT_MESSAGE" value="无按钮事件" />
   </component>
 </project>
