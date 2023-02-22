@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/main/DownPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MainWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/RightPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MyPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/RightPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/RightPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/FileOperate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/FileOperate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UpPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/RightPanel.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TahoeLafs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TahoeLafs.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

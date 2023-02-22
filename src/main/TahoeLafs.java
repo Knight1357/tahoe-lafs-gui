@@ -6,10 +6,17 @@ import java.util.Comparator;
 
 public class TahoeLafs {
    public static MainWindow mainWindow = new MainWindow();
-   public static MyPanel myPanel=new MyPanel();
-   public static DownScorllPanel downScorllPanel =new DownScorllPanel();
 
-   public static UpPanel upPanel =new UpPanel();
+   public static UpPanel upPanel=new UpPanel();
+
+   public static SearchPanel searchPanel=new SearchPanel();
+
+   public static OperateButtonPanel operateButtonPanel=new OperateButtonPanel();
+   public static InformationPanel informationPanel=new InformationPanel();
+   public static DownPanel downPanel=new DownPanel();
+   public static FileList<FileNode> fileList=new FileList<>();
+   public static FileListModel fileListModel=new FileListModel();
+   public static FileListRenderer fileListRenderer=new FileListRenderer();
 
 
 
@@ -17,13 +24,9 @@ public class TahoeLafs {
 
 
 
-    public void Init()//初始化窗口
+
+   public void Init()//初始化窗口
     {
-        mainWindow.add(myPanel);
-        myPanel.add(upPanel,BorderLayout.NORTH);
-        myPanel.add(downScorllPanel,BorderLayout.CENTER);
-
-
 
 
         File dir = Constant.NOWPATH;
