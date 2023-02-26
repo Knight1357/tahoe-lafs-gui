@@ -1,0 +1,9 @@
+<changelist name="在进行签出之前于_2023_2_22_19_17_取消提交了变更_[变更]" date="1677064634105" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2023_2_22_19_17_取消提交了变更_[变更]/shelved.patch" />
+  <option name="DESCRIPTION" value="在进行签出之前于 2023/2/22 19:17 取消提交了变更 [变更]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/Tahoe-Lafs-GUI/FileList$1.class" />
+    <option name="AFTER_PATH" value="out/production/Tahoe-Lafs-GUI/FileList$1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/在进行签出之前于_2023_2_22_19_17_取消提交了变更_[变更]/FileList$1.class" />
+  </binary>
+</changelist>
