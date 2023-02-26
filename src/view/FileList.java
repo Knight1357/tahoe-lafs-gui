@@ -21,8 +21,5 @@ public class FileList<T> extends JList<T> {
                 this.removeMouseMotionListener(b);
         }
     }
-
-
-
 }
 

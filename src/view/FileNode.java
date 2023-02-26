@@ -6,38 +6,18 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class FileNode {
-    File file;
     String name="";
-    Icon icon;
-    String uri="";
+    String URI="";
     boolean isDir=false;
-    public FileNode(File file)
+    Float Size=0f;
+    public FileNode(String name,String URI)
     {
-        this.file=file;
-        this.isDir=file.isDirectory();
-        if(!this.isDir)
-        {
-            BufferedReader reader;
-            try {
-                reader = new BufferedReader(new FileReader(file.getAbsoluteFile()));
-                String line = reader.readLine();
-                this.name=line;
-                line = reader.readLine();
-                this.uri=line;
-                reader.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        else
-        {
-            this.name=file.getName();
-        }
-
+        this.name=name;
+        this.URI=URI;
     }
 
     @Override
     public String toString() {
-        return this.name;
+        return this.name+" "+URI;
     }
 }

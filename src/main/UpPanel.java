@@ -7,8 +7,8 @@ import java.nio.file.attribute.FileTime;
 class UpPanel extends JPanel {
     public UpPanel() {
         this.setVisible(true);
-        this.setSize(400,100);
-        this.setPreferredSize(new Dimension(400,100));
+        this.setSize(600,100);
+        this.setPreferredSize(new Dimension(600,100));
         this.setLayout(new BorderLayout());
     }
 }
@@ -19,8 +19,8 @@ class OperatePanel extends JPanel{
     public OperatePanel()
     {
         this.setVisible(true);
-        this.setSize(400,80);
-        this.setPreferredSize(new Dimension(400,90));
+        this.setSize(600,80);
+        this.setPreferredSize(new Dimension(600,90));
         this.setLayout(new GridLayout(2,1,0,0));
     }
 }
@@ -29,8 +29,8 @@ class OperatePanel extends JPanel{
 class SearchPanel extends JPanel {
     public SearchPanel() {
         this.setVisible(true);
-        this.setSize(400,40);
-        this.setPreferredSize(new Dimension(400,40));
+        this.setSize(600,40);
+        this.setPreferredSize(new Dimension(600,40));
         this.setLayout(new FlowLayout(FlowLayout.LEFT));
     }
 }
@@ -40,8 +40,8 @@ class SearchTextFild extends JTextField{
     public SearchTextFild()
     {
         this.setVisible(true);
-        this.setSize(220,40);
-        this.setPreferredSize(new Dimension(220,40));
+        this.setSize(400,35);
+        this.setPreferredSize(new Dimension(400,35));
     }
 }
 
@@ -57,9 +57,9 @@ class OperateButtonPanel extends JPanel{
     public OperateButtonPanel()
     {
         this.setVisible(true);
-        this.setSize(400,40);
-        this.setPreferredSize(new Dimension(400,40));
-        this.setLayout(new GridLayout(1,3,5,0));
+        this.setSize(600,40);
+        this.setPreferredSize(new Dimension(600,40));
+        this.setLayout(new FlowLayout(FlowLayout.LEFT));
     }
 }
 
@@ -70,12 +70,7 @@ class UploadButton extends UpButton{
     }
 }
 
-class UpButton extends JButton {
-    public UpButton() {
-        this.setSize(80, 40);
-        this.setPreferredSize(new Dimension(80,40));
-    }
-}
+
 
 class DownloadButton extends UpButton{
     public DownloadButton()
@@ -96,29 +91,21 @@ class InformationPanel extends JPanel{
     public InformationPanel()
     {
         this.setVisible(true);
-        this.setSize(400,20);
-        this.setPreferredSize(new Dimension(400,20));
+        this.setSize(600,20);
+        this.setPreferredSize(new Dimension(600,20));
         this.setLayout(new BorderLayout(10,0));
     }
 }
 
 
-class UpLable extends JLabel{
-    public UpLable()
-    {
-        this.setVisible(true);
-        this.setSize(100,20);
-        this.setPreferredSize(new Dimension(100,20));
-    }
 
-}
 
 class FirstInformationPanel extends JPanel{
     public FirstInformationPanel()
     {
         this.setVisible(true);
         this.setPreferredSize(new Dimension(300,20));
-        this.setLayout(new GridLayout(1,1,20,0));
+        this.setLayout(new FlowLayout(FlowLayout.LEFT,5,0));
     }
 }
 
