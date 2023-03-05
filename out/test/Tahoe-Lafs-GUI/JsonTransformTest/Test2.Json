@@ -1,0 +1,107 @@
+[
+  "dirnode",
+  {
+    "rw_uri": "URI:DIR2:ufgsw2scg3eolnneb4gn6kpdgq:uapuebm2qugazfeiu26wfhp7boik7yqmaqj4dhygkjpre7d7injq",
+    "verify_uri": "URI:DIR2-Verifier:aqiwiabvyehwyxirdxomevn43m:uapuebm2qugazfeiu26wfhp7boik7yqmaqj4dhygkjpre7d7injq",
+    "ro_uri": "URI:DIR2-RO:too53ut3bqtkjfifjsotpu53ni:uapuebm2qugazfeiu26wfhp7boik7yqmaqj4dhygkjpre7d7injq",
+    "children": {
+      "test_file_50MB": [
+        "filenode",
+        {
+          "format": "CHK",
+          "verify_uri": "URI:CHK-Verifier:eyl32pnq6qvc747jfcy4mzbzzm:hpfvhxuiakhoolxvqqm5x43qcvslwxty5i3bh6ej4jsxbsxcs2fq:3:10:52428800",
+          "ro_uri": "URI:CHK:vxfup3rmube5qww6kpyd5mmabi:hpfvhxuiakhoolxvqqm5x43qcvslwxty5i3bh6ej4jsxbsxcs2fq:3:10:52428800",
+          "mutable": false,
+          "metadata": {
+            "tahoe": {
+              "linkmotime": 1677329020.042601,
+              "linkcrtime": 1677322742.895622
+            }
+          },
+          "size": 52428800
+        }
+      ],
+      "test_file_100MB": [
+        "filenode",
+        {
+          "format": "CHK",
+          "verify_uri": "URI:CHK-Verifier:rlb7dey53axdfryyduye74djha:23alrhpwr62ubjyhw7lwv6tvmrhklbvg2lgysivhufjlz6a5zl5a:3:10:104857600",
+          "ro_uri": "URI:CHK:3gsecx63hvurapbbkpeytqwlku:23alrhpwr62ubjyhw7lwv6tvmrhklbvg2lgysivhufjlz6a5zl5a:3:10:104857600",
+          "mutable": false,
+          "metadata": {
+            "tahoe": {
+              "linkmotime": 1677327632.227567,
+              "linkcrtime": 1677322753.374242
+            }
+          },
+          "size": 104857600
+        }
+      ],
+      "test_file_128MB": [
+        "filenode",
+        {
+          "format": "CHK",
+          "verify_uri": "URI:CHK-Verifier:hm6qxqw74wedceyzurcwvkrb7m:tzzwzbga4jk2wdfv7q57tvlrc5xvu2kna7xupw2abqdtwlodn37q:3:10:134217728",
+          "ro_uri": "URI:CHK:d4ewsgs5dcnlxrcw4n543g7soe:tzzwzbga4jk2wdfv7q57tvlrc5xvu2kna7xupw2abqdtwlodn37q:3:10:134217728",
+          "mutable": false,
+          "metadata": {
+            "tahoe": {
+              "linkmotime": 1677390124.966515,
+              "linkcrtime": 1677331916.464926
+            }
+          },
+          "size": 134217728
+        }
+      ],
+      "test_file_10MB": [
+        "filenode",
+        {
+          "format": "CHK",
+          "verify_uri": "URI:CHK-Verifier:zfte3m3fnmivmg5fqauxy75mze:7i3rz7pesnt5ac5v7cs6554tq2qaucstp6oftokahchzxdjzeewq:3:10:10485760",
+          "ro_uri": "URI:CHK:kbqueipzg2lqntku3m57qnksyy:7i3rz7pesnt5ac5v7cs6554tq2qaucstp6oftokahchzxdjzeewq:3:10:10485760",
+          "mutable": false,
+          "metadata": {
+            "tahoe": {
+              "linkmotime": 1677332023.061937,
+              "linkcrtime": 1677322515.447608
+            }
+          },
+          "size": 10485760
+        }
+      ],
+      "test_file_64MB": [
+        "filenode",
+        {
+          "format": "CHK",
+          "verify_uri": "URI:CHK-Verifier:zbskiqg6pmvznny4am56a6lmny:qduk455arc5kbdp6bsvdjj43ox7m2t26sdgr6k5wdi3qat6u35gq:3:10:67108864",
+          "ro_uri": "URI:CHK:vw2vclfcsxihdpj7d6p5ydqaf4:qduk455arc5kbdp6bsvdjj43ox7m2t26sdgr6k5wdi3qat6u35gq:3:10:67108864",
+          "mutable": false,
+          "metadata": {
+            "tahoe": {
+              "linkmotime": 1677389048.732617,
+              "linkcrtime": 1677322527.88327
+            }
+          },
+          "size": 67108864
+        }
+      ],
+      "1M": [
+        "filenode",
+        {
+          "format": "CHK",
+          "verify_uri": "URI:CHK-Verifier:vsbed4o7hyyo2uurptdwemkwaq:c7vk6youyvue7prpoqamclgssech7xfpxxdnjrkrubftljttzwga:3:10:1048576",
+          "ro_uri": "URI:CHK:u7x46acy6etrojmuol35nzfgeu:c7vk6youyvue7prpoqamclgssech7xfpxxdnjrkrubftljttzwga:3:10:1048576",
+          "mutable": false,
+          "metadata": {
+            "tahoe": {
+              "linkmotime": 1677327442.753656,
+              "linkcrtime": 1677327442.753656
+            }
+          },
+          "size": 1048576
+        }
+      ]
+    },
+    "mutable": true
+  }
+]
