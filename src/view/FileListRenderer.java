@@ -10,17 +10,20 @@ public class FileListRenderer extends DefaultListCellRenderer {
             int index,
             boolean isSelected,
             boolean cellHasFocus) {
-        setPreferredSize(new Dimension(100,50));
-        FileList fileList=(FileList) list;
+        FileNode temp=TahoeLafs.fileContents.get(value.toString());
+//        System.out.println("Renderer:"+value.toString());
+        ImageIcon imageIcon;//图片
 
-        setText(value.toString());
-        ImageIcon imageIcon;
-        if(value.toString().indexOf('.')!=-1) {
-            imageIcon=new ImageIcon("/Users/liushen/Library/CloudStorage/OneDrive-个人/works/Tahoe-Lafs-GUI/Tahoe-Lafs-GUI/image/wenjian.png");
-        }
-        else  {
+        setPreferredSize(new Dimension(100,50));//设置大小
+        setText(temp.getName());//设置名字
+
+        if(temp.isDir()) {//设置图标种类
             imageIcon=new ImageIcon("/Users/liushen/Library/CloudStorage/OneDrive-个人/works/Tahoe-Lafs-GUI/Tahoe-Lafs-GUI/image/wenjianjia.png");
         }
+        else  {
+            imageIcon=new ImageIcon("/Users/liushen/Library/CloudStorage/OneDrive-个人/works/Tahoe-Lafs-GUI/Tahoe-Lafs-GUI/image/wenjian.png");
+        }
+        //设置图标大小属性
         Image img=imageIcon.getImage();
         img=img.getScaledInstance(50,50,Image.SCALE_DEFAULT);
         imageIcon.setImage(img);
