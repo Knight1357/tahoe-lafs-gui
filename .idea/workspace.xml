@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
-      <change afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/HashMapToJsonFileExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/JsonToHashMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/fasterxml_jackson_datatype_hibernate4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.5.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/jackson-datatype-hibernate4-2.5.3.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileListRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileListRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileNode.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Test2.Json" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Test2.Json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/DownPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/FileListPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TahoeLafs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TahoeLafs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/FileListRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FileListRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/FileNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FileNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,29 +57,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/48444/OneDrive/works/swing 美化/beautyeye-master/dist/beautyeye_lnf.jar&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/48444/OneDrive/works/swing 美化/beautyeye-master/dist/beautyeye_lnf.jar",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "库",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/JsonTransformTest" />
@@ -160,7 +157,7 @@
       <workItem from="1677484824423" duration="317000" />
       <workItem from="1677496060796" duration="3059000" />
       <workItem from="1677982021838" duration="785000" />
-      <workItem from="1678005085418" duration="9319000" />
+      <workItem from="1678005085418" duration="11177000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1675939285012</created>
@@ -365,7 +362,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677398926611</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update">
+      <created>1678017317770</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1678017317770</updated>
+    </task>
+    <task id="LOCAL-00031" summary="update">
+      <created>1678017437954</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1678017437954</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -399,16 +410,5 @@
     <MESSAGE value="test" />
     <MESSAGE value="update" />
     <option name="LAST_COMMIT_MESSAGE" value="update" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/TahoeLafs.java</url>
-          <line>133</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

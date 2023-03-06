@@ -16,5 +16,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="beautyeye_lnf" level="project" />
     <orderEntry type="library" name="google.code.gson" level="project" />
+    <orderEntry type="library" name="fasterxml.jackson.datatype.hibernate4" level="project" />
   </component>
 </module>
