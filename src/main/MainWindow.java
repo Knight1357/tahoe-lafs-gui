@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class MainWindow extends JFrame {
+public class MainWindow extends JFrame {//主窗口设置
 
     public MainWindow() {
         this.setTitle("Tahoe-Lafs");

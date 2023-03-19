@@ -1,3 +1,5 @@
+package RendererTest;
+
 import java.util.ArrayList;
 
 public class FileNode {

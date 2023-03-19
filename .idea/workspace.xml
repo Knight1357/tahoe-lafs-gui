@@ -5,16 +5,62 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/fasterxml_jackson_datatype_hibernate4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-annotations-2.5.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-core-2.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-databind-2.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jackson-datatype-hibernate4-2.5.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RendererTest/CRTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RendererTest/FileListCellRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RendererTest/FileListModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RendererTest/FileNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/RendererTest/RendererTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/FileListCellRenderer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Tahoe-Lafs-GUI.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/Data.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/Data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/DownPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/DownloadButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/DownloadButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileDateLable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileDateLable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileListPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileListRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileNameLable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileNameLable.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileOperate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileOperate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileSizeLable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FileSizeLable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FirstInformationPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/FirstInformationPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/InformationPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/InformationPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MakeDirectoryButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/MakeDirectoryButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/OperateButtonPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/OperateButtonPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/OperatePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/OperatePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/OtherInformationPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/OtherInformationPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SearchButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SearchButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SearchPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SearchPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SearchTextFild.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/SearchTextFild.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/TahoeLafs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/UpPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/UpPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/UploadButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Tahoe-Lafs-GUI/UploadButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/HashMapToJsonFileExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonToHashMapExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Children.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/DirNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/JsonTransform.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Site.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Test2.Json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/JsonTransformTest/Test2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Tahoe-Lafs-GUI/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/control/FileOperate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/control/FileOperate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/FileListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/CenterPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/MainWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/TahoeLafs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/TahoeLafs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/UpPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/UpPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/HashMapToJsonFileExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/JsonToHashMapExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/JsonTransformTest/JsonToHashMapExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/JsonTransformTest/JsonTransform.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/JsonTransformTest/Test.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/JsonTransformTest/Test2.Json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/JsonTransformTest/Test2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/FileList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FileList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/FileListRenderer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/FileNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/FileNode.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,10 +84,15 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="2dc246d0-96b8-4165-affe-d1e241126574" />
+        <option name="accountId" value="9147756e-864b-4c0a-825d-13dac032a994" />
         <option name="url" value="https://github.com/Knight1357/Tahoe-Lafs-GUI.git" />
       </UrlAndAccount>
     </option>
@@ -68,19 +119,22 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/48444/OneDrive/works/swing 美化/beautyeye-master/dist/beautyeye_lnf.jar",
+    "last_opened_file_path": "/Users/liushen/Library/CloudStorage/OneDrive-个人/works/Tahoe-Lafs-GUI/Tahoe-Lafs-GUI/src/test/RendererTest",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "库",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/RendererTest" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/JsonTransformTest" />
     </key>
@@ -88,30 +142,38 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="RendererTest" />
       <recent name="" />
     </key>
   </component>
   <component name="RunManager" selected="应用程序.TahoeLafs">
     <configuration name="HashMapToJsonFileExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HashMapToJsonFileExample" />
+      <option name="MAIN_CLASS_NAME" value="JsonTransformTest.HashMapToJsonFileExample" />
       <module name="Tahoe-Lafs-GUI" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="JsonToHashMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JsonToHashMapExample" />
+      <option name="MAIN_CLASS_NAME" value="JsonTransformTest.JsonToHashMapExample" />
       <module name="Tahoe-Lafs-GUI" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JsonTransform" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JsonTransformTest.JsonTransform" />
+    <configuration name="RendererTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RendererTest" />
+      <module name="Tahoe-Lafs-GUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RendererTest.RendererTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RendererTest.RendererTest" />
       <module name="Tahoe-Lafs-GUI" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="JsonTransformTest.*" />
+          <option name="PATTERN" value="RendererTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,20 +188,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestString" />
-      <module name="Tahoe-Lafs-GUI" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="应用程序.TahoeLafs" />
-        <item itemvalue="应用程序.JsonToHashMapExample" />
+        <item itemvalue="应用程序.RendererTest.RendererTest" />
+        <item itemvalue="应用程序.RendererTest" />
         <item itemvalue="应用程序.HashMapToJsonFileExample" />
-        <item itemvalue="应用程序.TestString" />
-        <item itemvalue="应用程序.JsonTransform" />
+        <item itemvalue="应用程序.JsonToHashMapExample" />
       </list>
     </recent_temporary>
   </component>
@@ -157,7 +212,15 @@
       <workItem from="1677484824423" duration="317000" />
       <workItem from="1677496060796" duration="3059000" />
       <workItem from="1677982021838" duration="785000" />
-      <workItem from="1678005085418" duration="11177000" />
+      <workItem from="1678005085418" duration="13480000" />
+      <workItem from="1678681857632" duration="1800000" />
+      <workItem from="1678687651720" duration="1019000" />
+      <workItem from="1678693974478" duration="6023000" />
+      <workItem from="1678705453934" duration="2304000" />
+      <workItem from="1678925430016" duration="2797000" />
+      <workItem from="1678930937444" duration="4789000" />
+      <workItem from="1678936725395" duration="160000" />
+      <workItem from="1679139603210" duration="19297000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1675939285012</created>
@@ -376,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678017437954</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update">
+      <created>1678082929590</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1678082929590</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
