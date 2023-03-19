@@ -2,24 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 
 
-//public class FileListCellRenderer extends DefaultListCellRenderer {
-//    public Component getListCellRendererComponent(JList<? extends Object> list,Object value,int index,boolean isSelected,boolean cellHasFocus) {
-//        setText(value.toString());		//设置文字
-//
-//        if(isSelected) {		//当某个元素被选中时
-//            setForeground(Color.WHITE);		//设置前景色（文字颜色）为白色
-//            setBackground(Color.BLUE);		//设置背景色为蓝色
-//            System.out.println(index+"被选中");
-//        } else {		//某个元素未被选中时（取消选中）
-//            setForeground(Color.BLACK);		//设置前景色（文字颜色）为黑色
-//            setBackground(Color.WHITE);		//设置背景色为白色
-//        }
-//        return this;
-//    }
-//}
-
-
-public class FileListCellRenderer extends DefaultListCellRenderer
+public class FileListCellRenderer implements ListCellRenderer
 {
    private FileListCellPanel fileListCellPanel=new FileListCellPanel();
 
@@ -29,7 +12,6 @@ public class FileListCellRenderer extends DefaultListCellRenderer
 
         fileListCellPanel.init(fileNode);
 
-        setText(value.toString());
         if(isSelected) {		//当某个元素被选中时
             fileListCellPanel.setForeground(Color.WHITE);		//设置前景色（文字颜色）为白色
             fileListCellPanel.setBackground(Color.LIGHT_GRAY);		//设置背景色为蓝色
@@ -40,13 +22,12 @@ public class FileListCellRenderer extends DefaultListCellRenderer
             fileListCellPanel.setBackground(Color.WHITE);		//设置背景色为白色
         }
         return fileListCellPanel;
-
     }
 
 }
 
 class FileListCellPanel extends JPanel {//文件列表单元格块
-    private FileOtherInformationPanle otherInformationPanle =new FileOtherInformationPanle();
+   private FileOtherInformationPanle otherInformationPanle=new FileOtherInformationPanle();
     private FileNameCellLable fileName;
     private FileSizeCellLable fileSize;
     private FileDateCellLable fileDate;
@@ -60,6 +41,8 @@ class FileListCellPanel extends JPanel {//文件列表单元格块
         this.setSize(850,50);
         this.setPreferredSize(new Dimension(850,50));
         this.setLayout(new BorderLayout());
+
+
 
        fileName=new FileNameCellLable();
         fileSize=new FileSizeCellLable();
@@ -96,10 +79,19 @@ class FileListCellPanel extends JPanel {//文件列表单元格块
         otherInformationPanle.add(fileSize);
         otherInformationPanle.add(fileDate);
 
-
-
     }
 
+    @Override
+    public void setBackground(Color bg) {
+        super.setBackground(bg);
+//        otherInformationPanle.setBackground(bg);
+    }
+
+    @Override
+    public void setForeground(Color fg) {
+        super.setForeground(fg);
+//        otherInformationPanle.setForeground(fg);
+    }
 
     class FileNameCellLable extends JLabel//文件名字标签
     {
@@ -117,6 +109,7 @@ class FileListCellPanel extends JPanel {//文件列表单元格块
             this.setVisible(true);
             this.setPreferredSize(new Dimension(300,50));
             this.setLayout(new GridLayout(1,2,10,0));
+//            this.setBackground(Color.white);
         }
     }
 
@@ -125,8 +118,8 @@ class FileListCellPanel extends JPanel {//文件列表单元格块
         FileSizeCellLable()
         {
             this.setVisible(true);
-            this.setSize(100,50);
-            this.setPreferredSize(new Dimension(100,50));
+            this.setSize(50,50);
+            this.setPreferredSize(new Dimension(50,50));
         }
     }
 
@@ -140,10 +133,6 @@ class FileListCellPanel extends JPanel {//文件列表单元格块
         }
     }
 }
-
-
-
-
 
 //class FileCellIcon extends
 

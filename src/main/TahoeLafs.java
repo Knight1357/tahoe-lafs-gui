@@ -77,32 +77,9 @@ public class TahoeLafs {
 
     }
 
-    void initWindows()//初始化窗口
+    void toJson()//写入json文件
     {
-        //初始化界面
-        initTop();//初始化上部分
-        initCenter();//初始化中间部分
-        mainWindow.show();
-
-        //读取json
-        FileReader reader = null;
-        try {
-            reader = new FileReader("data/Data.json");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        Gson gson = new Gson();
-        fileContents = gson.fromJson(reader, new TypeToken<HashMap<String, FileNode>>() {
-        }.getType());
-
-        System.out.println(fileContents);
-        try {
-            reader.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-////写入json
+        ////写入json
         //初始化
 //        FileNode Host = new FileNode("User", "URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka");
 //        FileNode f1 = new FileNode("2022级郑州轻工业大学新生赛报名表.xlsx", "URI:SSK:3qylezfxtxvoifdfreayse556u:yvlag2qazwtukwdu7afwvzmbo3k7bqlk4bg4q25btj6jjvklgrmq");
@@ -114,14 +91,47 @@ public class TahoeLafs {
 //        fileContents.put("URI:SSK:iazixx4xacu5hx3nhbpq5lyxfe:bywfn7lus5kz34z4icecaxwxcl7bkpese6eh2rds5h7iagfy2x2q", f2);
 
         //写入到data.json文件
-//        try {
-//            Gson gson = new Gson();
-//            FileWriter writer = new FileWriter("data/Data.json");
-//            gson.toJson(fileContents, writer);
-//            writer.close();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            Gson gson = new Gson();
+            FileWriter writer = new FileWriter("data/Data.json");
+            gson.toJson(fileContents, writer);
+            writer.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    void fromJson()//读取json文件
+    {
+        //读取json
+        FileReader reader = null;
+        try {
+            reader = new FileReader("data/Data.json");
+        } catch (FileNotFoundException e) {
+            throw new RuntimeException(e);
+        }
+        Gson gson = new Gson();
+        fileContents = gson.fromJson(reader, new TypeToken<HashMap<String, FileNode>>() {
+        }.getType());
+        System.out.println(fileContents);
+        try {
+            reader.close();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+    void initWindows()//初始化窗口
+    {
+        //初始化界面
+        initTop();//初始化上部分
+        initCenter();//初始化中间部分
+        mainWindow.show();
+
+        fromJson();//读取json文件
+
+//        toJson();//写入json文件
 
         //测试输出
         for (FileNode value : fileContents.values()) {
