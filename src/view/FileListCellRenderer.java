@@ -15,8 +15,8 @@ public class FileListCellRenderer implements ListCellRenderer
         if(isSelected) {		//当某个元素被选中时
             fileListCellPanel.setForeground(Color.WHITE);		//设置前景色（文字颜色）为白色
             fileListCellPanel.setBackground(Color.LIGHT_GRAY);		//设置背景色为蓝色
+            Constant.setIsSelectFileNode(fileNode);
 
-            System.out.println(index+"被选中");
         } else {		//某个元素未被选中时（取消选中）
             fileListCellPanel.setForeground(Color.BLACK);		//设置前景色（文字颜色）为黑色
             fileListCellPanel.setBackground(Color.WHITE);		//设置背景色为白色
