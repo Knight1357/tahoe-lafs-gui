@@ -1,36 +1,40 @@
 import java.io.File;
 import java.util.ArrayList;
+
 // 配置文件
 public class Constant {
     //用户根目录路径
     private static String userPath = "URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka";
 
-    private static ArrayList<String> filelocationlist=new ArrayList<>(){
+
+    private static String introducerAPI = "127.0.0.1:3456";
+
+    private static ArrayList<String> filelocationlist = new ArrayList<>() {
         {
             add(userPath);//初始化链表
         }
     };//控制前进退回
 
-    public static String getFileLocationNode(int index)
-    {
+    public static String getIntroducerAPI() {
+        return introducerAPI;
+    }
+
+    public static String getFileLocationNode(int index) {
         return filelocationlist.get(index);
     }
 
-    public static int getFileLocationListSize()
-    {
+    public static int getFileLocationListSize() {
         return filelocationlist.size();
     }
 
-    public static void addFileLocationNode(String hashVal)
-    {
+    public static void addFileLocationNode(String hashVal) {
         filelocationlist.add(hashVal);
     }
 
 
-    public static int nowfile=0;//文件指向
+    public static int nowfile = 0;//文件指向
     private static FileNode parentNode;//父级文件夹路径
     private static FileNode isSelectFileNode;//目前选中的文件
-
 
 
     public static FileNode getParentNode() {
@@ -54,10 +58,6 @@ public class Constant {
         Constant.isSelectFileNode = isSelectFileNode;
         System.out.println("设置了 " + isSelectFileNode.getName());
     }
-
-
-
-
 
 
 }
