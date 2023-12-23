@@ -1,6 +1,6 @@
 import java.io.File;
 import java.util.ArrayList;
-
+// 配置文件
 public class Constant {
     //用户根目录路径
     private static String userPath = "URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka";
