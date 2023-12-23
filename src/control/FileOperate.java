@@ -10,7 +10,7 @@ public class FileOperate {
 //URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka
 
         String hashVal=Constant.getParentNode().getHashVal();
-        String urlString = "http://47.115.222.245:3456/uri/"+ URLEncoder.encode(hashVal,"UTF-8")+"?t=mkdir&name="+URLEncoder.encode(fileName,"UTF-8");
+        String urlString = "http://"+Constant.getIntroducerAPI()+"/uri/"+ URLEncoder.encode(hashVal,"UTF-8")+"?t=mkdir&name="+URLEncoder.encode(fileName,"UTF-8");
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("POST");
@@ -46,7 +46,7 @@ public class FileOperate {
 
         String hashVal=Constant.getIsSelectFileNode().getHashVal();//获取选中文件的hash
         String fileName=Constant.getIsSelectFileNode().getName();//获取文件名
-        String urlString = "http://47.115.222.245:3456/uri/"+ URLEncoder.encode(hashVal,"UTF-8");
+        String urlString = "http://"+Constant.getIntroducerAPI()+"/uri/"+ URLEncoder.encode(hashVal,"UTF-8");
 
         //String urlString = "http://47.115.222.245:3456/uri/URI%3ACHK%3Axd3cxxdh4jk6ys5mhfzox6mdgy%3Amauyymc77s3cwdexcx5a2awpiji4bp5dwv6t4l4b4jouavqgfb4a%3A3%3A10%3A655074";
 
