@@ -88,7 +88,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.TahoeLafs">
+  <component name="RunManager" selected="Application.ArrayListTest">
     <configuration name="ArrayListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ArrayListTest.ArrayListTest" />
       <module name="Tahoe-Lafs-GUI" />
@@ -148,15 +148,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="应用程序.TahoeLafs" />
-        <item itemvalue="应用程序.ArrayListTest" />
-        <item itemvalue="应用程序.SendCreateDirTest" />
-        <item itemvalue="应用程序.SendDownloadFileGetTest" />
-        <item itemvalue="应用程序.SendViewFileGetTest" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
