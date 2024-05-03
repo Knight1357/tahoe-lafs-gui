@@ -1,3 +1,2 @@
-# TahoeLafs-Lafs-GUI
+# tahoe-lafs-gui
 
-This is a TahoeLafs-Lafs-GUI programe!
