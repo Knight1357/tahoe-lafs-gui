@@ -28,3 +28,7 @@ java TahoeLafs
 1. 启动 GUI 前, 你应先运行 tahoe-lafs 系统
 2. 在 Constant 中, 修改运行 tahoe-lafs 主机的ip, 以及新建的根目录文件夹
 3. 编译运行 TahoeLafs
+
+## 注意事项
+
+这是我写的第一个小项目, 代码中有许多不规范的地方
