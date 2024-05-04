@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="delete">
+    <list default="true" id="d3ad8cae-0962-44da-b23e-cb82fa64c344" name="变更" comment="update README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +204,7 @@
       <workItem from="1679491756452" duration="66000" />
       <workItem from="1679491825058" duration="4362000" />
       <workItem from="1679530089478" duration="2150000" />
-      <workItem from="1714743180222" duration="1109000" />
+      <workItem from="1714743180222" duration="2454000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1675939285012</created>
@@ -509,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714743687272</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="update README">
+      <option name="closed" value="true" />
+      <created>1714796661170</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1714796661170</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -544,6 +553,7 @@
     <MESSAGE value="add .gitignore" />
     <MESSAGE value="update" />
     <MESSAGE value="delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete" />
+    <MESSAGE value="update README" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README" />
   </component>
 </project>
