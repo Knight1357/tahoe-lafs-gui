@@ -8,7 +8,6 @@ import javax.swing.*;
  */
 public class FileList<T> extends JList<T> {
     String filename;
-
     public FileList() {
     }
 }

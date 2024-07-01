@@ -27,7 +27,6 @@ public class FileNode {
         }
     }
 
-
     @Override
     public String toString() {
         return this.hashVal;

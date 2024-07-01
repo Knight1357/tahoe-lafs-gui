@@ -6,7 +6,6 @@ import com.tahoelafsgui.pojo.FileNode;
 import javax.swing.*;
 import java.awt.*;
 
-
 /**
  * @author liushen
  */
@@ -25,7 +24,6 @@ public class FileListCellRenderer implements ListCellRenderer {
             // 设置背景色为蓝色
             fileListCellPanel.setBackground(Color.LIGHT_GRAY);
             Constant.setIsSelectFileNode(fileNode);
-
         } else {
             // 设置前景色（文字颜色）为黑色
             fileListCellPanel.setForeground(Color.BLACK);
@@ -39,12 +37,10 @@ public class FileListCellRenderer implements ListCellRenderer {
 
 // 文件列表单元格块
 class FileListCellPanel extends JPanel {
-    private final FileOtherInformationPanel otherInformationPanle = new FileOtherInformationPanel();
+    private final FileOtherInformationPanel otherInformationPanel = new FileOtherInformationPanel();
     private final FileNameCellLabel fileName;
     private final FileSizeCellLable fileSize;
     private final FileDateCellLabel fileDate;
-
-    private FileNode fileNode;
 
     FileListCellPanel() {
         this.setVisible(true);
@@ -85,9 +81,9 @@ class FileListCellPanel extends JPanel {
 
 
         this.add(fileName, BorderLayout.WEST);
-        this.add(otherInformationPanle, BorderLayout.EAST);
-        otherInformationPanle.add(fileSize);
-        otherInformationPanle.add(fileDate);
+        this.add(otherInformationPanel, BorderLayout.EAST);
+        otherInformationPanel.add(fileSize);
+        otherInformationPanel.add(fileDate);
 
     }
 
