@@ -1,3 +1,5 @@
+package com.tahoelafsgui.config;
+
 import java.util.ArrayList;
 
 /**
@@ -9,7 +11,7 @@ public class Constant {
 
     private static String introducerAPI = "127.0.0.1:3456";
 
-    private static ArrayList<String> filelocationlist = new ArrayList<>() {
+    private static final ArrayList<String> filelocationlist = new ArrayList<>() {
         {
             add(USER_PATH);//初始化链表
         }
@@ -57,10 +59,9 @@ public class Constant {
         return isSelectFileNode;
     }
 
-    public static void setIsSelectFileNode(FileNode isSelectFileNode) {//设置当前选中的文件
+    //设置当前选中的文件
+    public static void setIsSelectFileNode(FileNode isSelectFileNode) {
         Constant.isSelectFileNode = isSelectFileNode;
         System.out.println("设置了 " + isSelectFileNode.getName());
     }
-
-
 }

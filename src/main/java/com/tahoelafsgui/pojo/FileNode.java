@@ -1,3 +1,5 @@
+package com.tahoelafsgui.pojo;
+
 import java.util.ArrayList;
 
 /**

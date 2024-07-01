@@ -1,3 +1,7 @@
+package com.tahoelafsgui.view;
+
+import com.tahoelafsgui.pojo.FileNode;
+
 import javax.swing.*;
 import java.awt.*;
 
