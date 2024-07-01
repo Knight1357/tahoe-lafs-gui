@@ -6,21 +6,21 @@ import java.util.ArrayList;
  * @author liushen
  */
 public class FileNode {
-    //文件名
+    // 文件名
     private String name = "";
-    //hash值
+    // hash值
     private String hashVal = "";
-    //是否是文件
+    // 是否是文件
     private boolean isDir = false;
-    //文件大小
+    // 文件大小
     private String size = "";
-    //文件内容
+    // 文件内容
     private ArrayList<String> fileContents = new ArrayList<>();
 
     public FileNode(String name, String hashVal) {
         this.name = name;
         this.hashVal = hashVal;
-        //判断是不是文件
+        // 判断是不是文件
         String substr = hashVal.substring(4, 7);
         if ("DIR".equals(substr)) {
             this.isDir = true;

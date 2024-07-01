@@ -12,8 +12,8 @@ import java.nio.charset.StandardCharsets;
  * @author liushen
  */
 public class FileOperate {
-    public static void creatFile(String fileName) throws Exception//创建文件夹
-    {
+    //创建文件夹
+    public static void creatFile(String fileName) throws Exception {
         System.out.println("创建文件夹");
         //http://47.115.222.245:3456/uri/URI%3ADIR2%3Awti64bj6ovkrubpngomrldezpi%3Ai7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka?t=mkdir-immutable&name=666nb
 //URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka
@@ -37,14 +37,14 @@ public class FileOperate {
                 response.append(inputLine);
             }
             in.close();
-
             String newFilehashVal = response.toString();
             //输出文件节点
             System.out.println(newFilehashVal);
             //更新文件
             Main.addFileNode(fileName, newFilehashVal);
             Main.loadDir(hashVal);
-        } else {//请求失败
+        } else {
+            //请求失败
             System.out.println("HTTP请求失败，错误码为：" + responseCode);
             //弹出
             JOptionPane.showMessageDialog(null, "创建失败\n" + "HTTP请求失败，错误码为：" + responseCode);
@@ -59,7 +59,7 @@ public class FileOperate {
         String hashVal = Constant.getIsSelectFileNode().getHashVal();
         //获取文件名
         String fileName = Constant.getIsSelectFileNode().getName();
-        String urlString = "http://" + Constant.getIntroducerAPI() + "/uri/" + URLEncoder.encode(hashVal, "UTF-8");
+        String urlString = "http://" + Constant.getIntroducerAPI() + "/uri/" + URLEncoder.encode(hashVal, StandardCharsets.UTF_8);
 
         //String urlString = "http://47.115.222.245:3456/uri/URI%3ACHK%3Axd3cxxdh4jk6ys5mhfzox6mdgy%3Amauyymc77s3cwdexcx5a2awpiji4bp5dwv6t4l4b4jouavqgfb4a%3A3%3A10%3A655074";
 
@@ -107,8 +107,8 @@ public class FileOperate {
         //如果存在这个文件
         if (Main.fileContents.containsKey(hashVal)) {
             Main.loadDir(hashVal);
-        } else//不存在
-        {
+        } else {
+            //不存在
             Main.loadDir(hashVal);
         }
     }
@@ -128,12 +128,11 @@ public class FileOperate {
         }
     }
 
-
-    public static void goToHome() {//回到主页
+    //回到主页
+    public static void goToHome() {
         System.out.println("回到主页");
         Main.loadDir(Constant.getUserPath());
         System.out.println("成功回到主页");
-
     }
 
     //前进
