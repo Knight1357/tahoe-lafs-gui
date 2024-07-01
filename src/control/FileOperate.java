@@ -112,7 +112,7 @@ public class FileOperate {
     public static void openDir() {
         if (Constant.getIsSelectFileNode().isDir()) {
             Constant.addFileLocationNode(Constant.getIsSelectFileNode().getHashVal());
-            Constant.nowfile++;
+            Constant.currentFile++;
             Main.loadDir(Constant.getIsSelectFileNode().getHashVal());
         }
     }
@@ -134,9 +134,9 @@ public class FileOperate {
     //前进
     public static void goToFore() {
         System.out.println("向前");
-        if (Constant.nowfile < Constant.getFileLocationListSize() - 1) {
-            Constant.nowfile++;
-            Main.loadDir(Constant.getFileLocationNode(Constant.nowfile));
+        if (Constant.currentFile < Constant.getFileLocationListSize() - 1) {
+            Constant.currentFile++;
+            Main.loadDir(Constant.getFileLocationNode(Constant.currentFile));
             System.out.println("成功向前");
 
         }
@@ -145,9 +145,9 @@ public class FileOperate {
     //后退
     public static void goToBack() {
         System.out.println("后退");
-        if (Constant.nowfile > 0) {
-            Constant.nowfile--;
-            Main.loadDir(Constant.getFileLocationNode(Constant.nowfile));
+        if (Constant.currentFile > 0) {
+            Constant.currentFile--;
+            Main.loadDir(Constant.getFileLocationNode(Constant.currentFile));
             System.out.println("成功退回");
         }
     }

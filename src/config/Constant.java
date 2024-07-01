@@ -1,4 +1,3 @@
-import java.io.File;
 import java.util.ArrayList;
 
 /**
@@ -34,7 +33,7 @@ public class Constant {
 
 
     //文件指向
-    public static int nowfile = 0;
+    public static int currentFile = 0;
     //父级文件夹路径
     private static FileNode parentNode;
     //目前选中的文件
