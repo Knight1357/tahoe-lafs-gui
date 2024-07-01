@@ -1,17 +1,19 @@
 import java.io.File;
 import java.util.ArrayList;
 
-// 配置文件
+/**
+ * @author liushen
+ */ // 配置文件
 public class Constant {
     //用户根目录路径
-    private static String userPath = "URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka";
+    private static final String USER_PATH = "URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka";
 
 
     private static String introducerAPI = "127.0.0.1:3456";
 
     private static ArrayList<String> filelocationlist = new ArrayList<>() {
         {
-            add(userPath);//初始化链表
+            add(USER_PATH);//初始化链表
         }
     };//控制前进退回
 
@@ -46,7 +48,7 @@ public class Constant {
     }
 
     public static String getUserPath() {//获得根目录路径
-        return userPath;
+        return USER_PATH;
     }
 
 

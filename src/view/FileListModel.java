@@ -1,8 +1,9 @@
 import javax.swing.*;
 
+/**
+ * @author liushen
+ */
 public class FileListModel<T> extends DefaultListModel<T> {
-    public FileListModel()
-    {
-
+    public FileListModel() {
     }
 }

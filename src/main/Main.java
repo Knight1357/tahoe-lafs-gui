@@ -10,7 +10,10 @@ import java.awt.event.MouseEvent;
 import java.io.*;
 import java.util.HashMap;
 
-public class TahoeLafs {
+/**
+ * @author liushen
+ */
+public class Main {
     //主窗口
     private static final JFrame mainWindow = new JFrame();//主窗口
     //上部分
@@ -407,7 +410,7 @@ public class TahoeLafs {
 
 
     public static void main(String[] args) throws IOException {
-        TahoeLafs tahoeLafs = new TahoeLafs();
-        tahoeLafs.init();
+        Main mainWindow = new Main();
+        mainWindow.init();
     }
 }

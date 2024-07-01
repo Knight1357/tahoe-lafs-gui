@@ -1,14 +1,15 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
+
+/**
+ * @author liushen
+ */
 public class MouseRightPopupMenu extends JPopupMenu {
     public  MouseRightPopupMenu()
     {
         super();
-
         JMenuItem open=new JMenuItem("打开");
         JMenuItem download=new JMenuItem("下载");
         JMenuItem copy=new JMenuItem("复制");

@@ -1,20 +1,28 @@
 import java.util.ArrayList;
 
+/**
+ * @author liushen
+ */
 public class FileNode {
-    private String name = "";//文件名
-    private String hashVal = "";//hash值
-    private boolean isDir = false;//是否是文件
-    private String size = "";//文件大小
-    private ArrayList<String> fileContents = new ArrayList<>();//文件内容
+    //文件名
+    private String name = "";
+    //hash值
+    private String hashVal = "";
+    //是否是文件
+    private boolean isDir = false;
+    //文件大小
+    private String size = "";
+    //文件内容
+    private ArrayList<String> fileContents = new ArrayList<>();
 
     public FileNode(String name, String hashVal) {
         this.name = name;
         this.hashVal = hashVal;
         //判断是不是文件
-        String substr = new String(hashVal.substring(4, 7));
-//        System.out.println("substr="+substr);
-        if (substr.equals("DIR"))
+        String substr = hashVal.substring(4, 7);
+        if ("DIR".equals(substr)) {
             this.isDir = true;
+        }
     }
 
 
