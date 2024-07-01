@@ -7,9 +7,9 @@ import java.util.ArrayList;
  */
 public class FileNode {
     // 文件名
-    private String name = "";
+    private String name;
     // hash值
-    private String hashVal = "";
+    private String hashVal;
     // 是否是文件
     private boolean isDir = false;
     // 文件大小
