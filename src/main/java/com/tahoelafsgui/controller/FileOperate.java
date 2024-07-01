@@ -1,5 +1,8 @@
 package com.tahoelafsgui.controller;
 
+import com.tahoelafsgui.Main;
+import com.tahoelafsgui.config.Constant;
+
 import javax.swing.*;
 import java.io.*;
 import java.net.*;

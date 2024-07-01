@@ -1,7 +1,13 @@
 package com.tahoelafsgui;
 
+
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.tahoelafsgui.config.Constant;
+import com.tahoelafsgui.controller.FileOperate;
+import com.tahoelafsgui.pojo.*;
+import com.tahoelafsgui.pojo.dto.FileList;
+import com.tahoelafsgui.view.*;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,37 +22,55 @@ import java.util.HashMap;
  * @author liushen
  */
 public class Main {
-    //主窗口
-    private static final JFrame mainWindow = new JFrame();//主窗口
-    //上部分
-    private static final JPanel upPanel = new JPanel();//上部分
-    private static final JPanel operatePanel = new JPanel();//文件操作块
-    private static final JPanel searchPanel = new JPanel();//文件搜索块
-    public static JTextField searchTextField = new JTextField();//搜索文本框
-    private static final JButton searchButton = new JButton();//搜索按钮
-    private static final JPanel operateButtonPanel = new JPanel();//文件操作按钮块
-    private static final JButton uploadButton = new JButton();//上传文件按钮
-    private static final JButton downloadButton = new JButton();//下载文件按钮
-    private static final JButton makeDirectoryButton = new JButton();//新建文件按钮
-
-    private static final JPanel fileSwitchPanel = new JPanel();//文件切换
+    // 主窗口
+    private static final JFrame mainWindow = new JFrame();
+    // 上部分
+    private static final JPanel upPanel = new JPanel();
+    // 文件操作块
+    private static final JPanel operatePanel = new JPanel();
+    // 文件搜索块
+    private static final JPanel searchPanel = new JPanel();
+    // 搜索文本框
+    public static JTextField searchTextField = new JTextField();
+    // 搜索按钮
+    private static final JButton searchButton = new JButton();
+    // 文件操作按钮块
+    private static final JPanel operateButtonPanel = new JPanel();
+    // 上传文件按钮
+    private static final JButton uploadButton = new JButton();
+    // 下载文件按钮
+    private static final JButton downloadButton = new JButton();
+    // 新建文件按钮
+    private static final JButton makeDirectoryButton = new JButton();
+    // 文件切换
+    private static final JPanel fileSwitchPanel = new JPanel();
 
     private static final JButton homeButton = new JButton();
     private static final JButton foreButton = new JButton();
     private static final JButton backButton = new JButton();
 
-    private static final JPanel informationPanel = new JPanel();//信息块
-    private static final JPanel firstInformationPanel = new JPanel();//首部分信息块
-    private static final JLabel fileNameLabel = new JLabel();//文件名标签
-    private static final JPanel otherInformationPanel = new JPanel();//文件其他信息块
-    private static final JLabel fileSizeLabel = new JLabel();//文件大小标签
-    private static final JLabel fileDateLabel = new JLabel();//文件日期标签
-    //下部分
+    // 信息块
+    private static final JPanel informationPanel = new JPanel();
+    // 首部分信息块
+    private static final JPanel firstInformationPanel = new JPanel();
+    // 文件名标签
+    private static final JLabel fileNameLabel = new JLabel();
+    // 文件其他信息块
+    private static final JPanel otherInformationPanel = new JPanel();
+    // 文件大小标签
+    private static final JLabel fileSizeLabel = new JLabel();
+    // 文件日期标签
+    private static final JLabel fileDateLabel = new JLabel();
+    // 下部分
     private static final JScrollPane fileScrollPanel = new JScrollPane();
-    private static final FileList<FileNode> fileList = new FileList<>();//文件列表
-    private static final FileListModel fileListModel = new FileListModel();//文件列表模式
-    private static final FileListCellRenderer fileListCellRenderer = new FileListCellRenderer();//文件列表渲染器
-    public static HashMap<String, FileNode> fileContents = new HashMap<>();//哈希表文件信息存储
+    // 文件列表
+    private static final FileList<FileNode> fileList = new FileList<>();
+    // 文件列表模式
+    private static final FileListModel fileListModel = new FileListModel();
+    // 文件列表渲染器
+    private static final FileListCellRenderer fileListCellRenderer = new FileListCellRenderer();
+    // 哈希表文件信息存储
+    public static HashMap<String, FileNode> fileContents = new HashMap<>();
 
     public static void addFileNode(String fileName, String hashVal) {
         FileNode fileNode = new FileNode(fileName, hashVal);
@@ -90,7 +114,7 @@ public class Main {
 
     }
 
-    void initLabel() {//初始化标签
+    void initLabel() {// 初始化标签
         fileNameLabel.setVisible(true);
         fileNameLabel.setSize(100, 20);
         fileNameLabel.setPreferredSize(new Dimension(100, 20));
@@ -107,7 +131,7 @@ public class Main {
         fileDateLabel.setText("文件日期");
     }
 
-    void initPanel() {//初始化块
+    void initPanel() {// 初始化块
         mainWindow.setVisible(true);
         mainWindow.setSize(850, 700);
         mainWindow.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -161,7 +185,7 @@ public class Main {
 
     }
 
-    void initText()//初始化文本
+    void initText()// 初始化文本
     {
         searchTextField.setVisible(true);
         searchTextField.setSize(400, 35);
@@ -169,81 +193,81 @@ public class Main {
     }
 
 
-    void init()//初始化窗口
+    void init()// 初始化窗口
     {
-        //初始化界面
-        initLabel();//初始化标签
-        initPanel();//初始化块
-        initTop();//初始化上部分
-        initCenter();//初始化中间部分
-        initListener();//初始化监听器
-        initButton();//初始化按钮
-        initText();//初始化文本
+        // 初始化界面
+        initLabel();// 初始化标签
+        initPanel();// 初始化块
+        initTop();// 初始化上部分
+        initCenter();// 初始化中间部分
+        initListener();// 初始化监听器
+        initButton();// 初始化按钮
+        initText();// 初始化文本
         mainWindow.show();
 
-        fromJson();//读取json文件
+        fromJson();// 读取json文件
 
-//        addFileNode("111.jepg","URI:CHK:xd3cxxdh4jk6ys5mhfzox6mdgy:mauyymc77s3cwdexcx5a2awpiji4bp5dwv6t4l4b4jouavqgfb4a:3:10:655074");
+//         addFileNode("111.jepg","URI:CHK:xd3cxxdh4jk6ys5mhfzox6mdgy:mauyymc77s3cwdexcx5a2awpiji4bp5dwv6t4l4b4jouavqgfb4a:3:10:655074");
 
-        toJson();//写入json文件
+        toJson();// 写入json文件
 
-        //测试输出
+        // 测试输出
         for (FileNode value : fileContents.values()) {
             System.out.println(value);
         }
 
         System.out.println("test:" + fileContents.get("URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka"));
 
-        //读取根目录
+        // 读取根目录
         loadDir(Constant.getUserPath());
 
     }
 
 
-    public static void loadDir(String hashVal) {    //读取文件夹文件
+    public static void loadDir(String hashVal) {    // 读取文件夹文件
         toJson();
         fromJson();
         if (fileContents.containsKey(hashVal)) {
             FileNode temp = fileContents.get(hashVal);
             if (!hashVal.isEmpty())
-                fileListModel.removeAllElements();//清空所有元素
+                fileListModel.removeAllElements();// 清空所有元素
 
-            if (temp.isDir()) {//文件夹，插入文件夹中的元素
-                Constant.setParentNode(temp);//记录父级文件夹
+            if (temp.isDir()) {// 文件夹，插入文件夹中的元素
+                Constant.setParentNode(temp);// 记录父级文件夹
                 for (String i : temp.getFileContents()) {
                     FileNode cur = fileContents.get(i);
                     fileListModel.addElement(cur);
                 }
-            } else {//文件，插入当前文件
+            } else {// 文件，插入当前文件
                 fileListModel.addElement(temp);
             }
             System.out.println("成功读取文件");
         } else {
-            fileListModel.removeAllElements();//清空所有元素
+            fileListModel.removeAllElements();// 清空所有元素
             System.out.println("查无此文件");
         }
 
     }
 
-    void initTop()//初始化上部分
+    void initTop()// 初始化上部分
     {
-        mainWindow.add(upPanel, BorderLayout.NORTH);//添加上部分块
+        mainWindow.add(upPanel, BorderLayout.NORTH);// 添加上部分块
 
-        upPanel.add(operatePanel, BorderLayout.WEST);//添加文件操作块
+        upPanel.add(operatePanel, BorderLayout.WEST);// 添加文件操作块
 
-        operatePanel.add(searchPanel);//添加搜索块
+        operatePanel.add(searchPanel);// 添加搜索块
 
-        searchPanel.add(searchTextField);//添加搜索文本框
+        searchPanel.add(searchTextField);// 添加搜索文本框
 
-        searchPanel.add(searchButton);//添加搜索按钮
+        searchPanel.add(searchButton);// 添加搜索按钮
 
-        operatePanel.add(operateButtonPanel);//添加文件操作块
+        operatePanel.add(operateButtonPanel);// 添加文件操作块
 
-        operateButtonPanel.add(uploadButton);//添加上传文件按钮
+        operateButtonPanel.add(uploadButton);// 添加上传文件按钮
 
-        operateButtonPanel.add(downloadButton);//添加下载文件按钮
+        operateButtonPanel.add(downloadButton);// 添加下载文件按钮
 
-        operateButtonPanel.add(makeDirectoryButton);//添加新建文件夹按钮
+        operateButtonPanel.add(makeDirectoryButton);// 添加新建文件夹按钮
 
         upPanel.add(fileSwitchPanel, BorderLayout.EAST);
 
@@ -253,30 +277,30 @@ public class Main {
 
         fileSwitchPanel.add(foreButton);
 
-        upPanel.add(informationPanel, BorderLayout.SOUTH);//添加信息块
+        upPanel.add(informationPanel, BorderLayout.SOUTH);// 添加信息块
 
-        informationPanel.add(firstInformationPanel, BorderLayout.WEST);//添加首要信息块
+        informationPanel.add(firstInformationPanel, BorderLayout.WEST);// 添加首要信息块
 
-        firstInformationPanel.add(fileNameLabel);//添加文件名列
+        firstInformationPanel.add(fileNameLabel);// 添加文件名列
 
-        informationPanel.add(otherInformationPanel, BorderLayout.EAST);//添加其他信息块
+        informationPanel.add(otherInformationPanel, BorderLayout.EAST);// 添加其他信息块
 
-        otherInformationPanel.add(fileSizeLabel);//添加文件大小列
+        otherInformationPanel.add(fileSizeLabel);// 添加文件大小列
 
-        otherInformationPanel.add(fileDateLabel);//添加文件日期列
+        otherInformationPanel.add(fileDateLabel);// 添加文件日期列
     }
 
-    void initCenter()//初始化中间部分
+    void initCenter()// 初始化中间部分
     {
-        mainWindow.add(fileScrollPanel, BorderLayout.CENTER);//添加文件列表块
+        mainWindow.add(fileScrollPanel, BorderLayout.CENTER);// 添加文件列表块
 
-        fileList.setModel(fileListModel);//设置列表模式
-        fileList.setCellRenderer(fileListCellRenderer);//设置文件列表渲染器
-        fileScrollPanel.setViewportView(fileList);//设置显示的列表
+        fileList.setModel(fileListModel);// 设置列表模式
+        fileList.setCellRenderer(fileListCellRenderer);// 设置文件列表渲染器
+        fileScrollPanel.setViewportView(fileList);// 设置显示的列表
 
     }
 
-    void initListener()//初始化监听器
+    void initListener()// 初始化监听器
     {
         searchButton.addActionListener(new ActionListener() {
             @Override
@@ -295,7 +319,7 @@ public class Main {
             @Override
             public void actionPerformed(ActionEvent e) {
 
-                if (!Constant.getIsSelectFileNode().isDir())//不是文件夹可以下载
+                if (!Constant.getIsSelectFileNode().isDir())// 不是文件夹可以下载
                 {
                     try {
                         System.out.println("下载文件正常");
@@ -312,7 +336,7 @@ public class Main {
 
         makeDirectoryButton.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {//新建文件
+            public void actionPerformed(ActionEvent e) {// 新建文件
                 String str = JOptionPane.showInputDialog(null, "请输入文件名称：\n", "新建文件", JOptionPane.PLAIN_MESSAGE);
                 System.out.println(str);
                 if (!str.isEmpty()) {
@@ -350,12 +374,12 @@ public class Main {
         fileList.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
-                //左键 双击
+                // 左键 双击
                 if (e.getButton() == MouseEvent.BUTTON1 && e.getClickCount() == 2) {
-                    //打开文件夹
+                    // 打开文件夹
                     if (Constant.getIsSelectFileNode().isDir()) {
                         FileOperate.openDir();
-                    } else//打开文件
+                    } else// 打开文件
                     {
                         FileOperate.openFile();
                     }
@@ -366,20 +390,10 @@ public class Main {
 
     }
 
-    public static void toJson()//写入json文件
+    // 写入json文件
+    public static void toJson()
     {
-        ////写入json
-        //初始化
-//        FileNode Host = new FileNode("User", "URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka");
-//        FileNode f1 = new FileNode("2022级郑州轻工业大学新生赛报名表.xlsx", "URI:SSK:3qylezfxtxvoifdfreayse556u:yvlag2qazwtukwdu7afwvzmbo3k7bqlk4bg4q25btj6jjvklgrmq");
-//        FileNode f2 = new FileNode("新建 DOCX 文档.docx", "URI:SSK:iazixx4xacu5hx3nhbpq5lyxfe:bywfn7lus5kz34z4icecaxwxcl7bkpese6eh2rds5h7iagfy2x2q");
-//        Host.getFileContents().add("URI:SSK:3qylezfxtxvoifdfreayse556u:yvlag2qazwtukwdu7afwvzmbo3k7bqlk4bg4q25btj6jjvklgrmq");
-//        Host.getFileContents().add("URI:SSK:iazixx4xacu5hx3nhbpq5lyxfe:bywfn7lus5kz34z4icecaxwxcl7bkpese6eh2rds5h7iagfy2x2q");
-//        fileContents.put("URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka", Host);
-//        fileContents.put("URI:SSK:3qylezfxtxvoifdfreayse556u:yvlag2qazwtukwdu7afwvzmbo3k7bqlk4bg4q25btj6jjvklgrmq", f1);
-//        fileContents.put("URI:SSK:iazixx4xacu5hx3nhbpq5lyxfe:bywfn7lus5kz34z4icecaxwxcl7bkpese6eh2rds5h7iagfy2x2q", f2);
-
-        //写入到data.json文件
+        // 写入到data.json文件
         try {
             Gson gson = new Gson();
             FileWriter writer = new FileWriter("data/Data.json");
@@ -390,12 +404,14 @@ public class Main {
         }
     }
 
-    public static void fromJson()//读取json文件
+    // 读取json文件
+    public static void fromJson()
     {
-        //读取json
+        // 读取json
         FileReader reader = null;
         try {
-            reader = new FileReader("data/Data.json");//读取的json文件
+            // 读取的json文件
+            reader = new FileReader("data/Data.json");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -409,7 +425,6 @@ public class Main {
             throw new RuntimeException(e);
         }
     }
-
 
     public static void main(String[] args) throws IOException {
         Main mainWindow = new Main();
