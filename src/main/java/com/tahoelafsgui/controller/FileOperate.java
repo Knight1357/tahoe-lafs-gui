@@ -17,7 +17,7 @@ public class FileOperate {
         System.out.println("创建文件夹");
 
         String hashVal = Constant.getParentNode().getHashVal();
-        String urlString = "http://" + Constant.getIntroducerAPI() + "/uri/" + URLEncoder.encode(hashVal, StandardCharsets.UTF_8) + "?t=mkdir&name=" + URLEncoder.encode(fileName, "UTF-8");
+        String urlString = "https://" + Constant.getIntroducerAPI() + "/uri/" + URLEncoder.encode(hashVal, StandardCharsets.UTF_8) + "?t=mkdir&name=" + URLEncoder.encode(fileName, StandardCharsets.UTF_8);
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("POST");
@@ -50,8 +50,7 @@ public class FileOperate {
     }
 
     // 下载文件
-    public static void downLoadFile() throws Exception
-    {
+    public static void downLoadFile() throws Exception {
         System.out.println("下载文件");
 
         // 获取选中文件的hash

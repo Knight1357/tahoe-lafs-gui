@@ -5,22 +5,19 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
 
 public class SendDownloadFileGetTest {
     public static void main(String[] args) throws Exception {
-//URI%3ASSK%3Ai7p4iidbnlkvwuwcqptjbwguqa%3A5w27doa5r7gk7x7ruqdeegxb5izu2atxf6ympunydoexs6hzls3q
-//URI:SSK:i7p4iidbnlkvwuwcqptjbwguqa:5w27doa5r7gk7x7ruqdeegxb5izu2atxf6ympunydoexs6hzls3q
 
-        String hashVal2="URI:SSK:3qylezfxtxvoifdfreayse556u:yvlag2qazwtukwdu7afwvzmbo3k7bqlk4bg4q25btj6jjvklgrmq";
+        String hashVal2 = "URI:SSK:3qylezfxtxvoifdfreayse556u:yvlag2qazwtukwdu7afwvzmbo3k7bqlk4bg4q25btj6jjvklgrmq";
 
-        String fileName="hello.xlsx";
-        String save="true";
-        String hashVal="URI:SSK:i7p4iidbnlkvwuwcqptjbwguqa:5w27doa5r7gk7x7ruqdeegxb5izu2atxf6ympunydoexs6hzls3q";
-        String urlString = "http://47.115.222.245:3456/uri?uri="+ URLEncoder.encode(hashVal2,"UTF-8")+
-                "&filename="+URLEncoder.encode(fileName,"UTF-8")+
-                "&save="+URLEncoder.encode(save,"UTF-8");
+        String fileName = "hello.xlsx";
+        String save = "true";
+        String urlString = "http://47.115.222.245:3456/uri?uri=" + URLEncoder.encode(hashVal2, StandardCharsets.UTF_8) +
+                "&filename=" + URLEncoder.encode(fileName, StandardCharsets.UTF_8) +
+                "&save=" + URLEncoder.encode(save, StandardCharsets.UTF_8);
 
-//        String urlString="http://47.115.222.245:3456/uri?uri=URI%3ASSK%3Ai7p4iidbnlkvwuwcqptjbwguqa%3A5w27doa5r7gk7x7ruqdeegxb5izu2atxf6ympunydoexs6hzls3q&filename=hello.txt&save=true";
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
@@ -36,7 +33,7 @@ public class SendDownloadFileGetTest {
                 response.append(inputLine);
             }
             in.close();
-            System.out.println(response.toString());
+            System.out.println(response);
         } else {
             System.out.println("HTTP请求失败，错误码为：" + responseCode);
         }
