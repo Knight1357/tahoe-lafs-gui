@@ -1,5 +1,3 @@
-以下是润色后的README文档：
-
 # Tahoe-LAFS-GUI
 
 Tahoe-LAFS-GUI 是一个用于 Tahoe-LAFS 分布式存储系统的图形用户界面 (GUI) 客户端。它提供了一个简单直观的界面，通过发送和接收 HTTP 请求来执行分布式存储系统的文件操作。
