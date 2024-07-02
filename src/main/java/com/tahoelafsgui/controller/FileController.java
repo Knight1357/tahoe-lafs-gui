@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * @author liushen
  */
-public class FileOperate {
+public class FileController {
     // 创建文件夹
     public static void creatFile(String fileName) throws Exception {
         System.out.println("创建文件夹");

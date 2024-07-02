@@ -1,41 +1,11 @@
-package com.tahoelafsgui.view;
+package com.tahoelafsgui.gui;
 
-import com.tahoelafsgui.config.Constant;
 import com.tahoelafsgui.pojo.FileNode;
 
 import javax.swing.*;
 import java.awt.*;
 
-/**
- * @author liushen
- */
-public class FileListCellRenderer implements ListCellRenderer {
-    private final FileListCellPanel fileListCellPanel = new FileListCellPanel();
-
-    @Override
-    public Component getListCellRendererComponent(JList list, Object value, int index, boolean isSelected, boolean cellHasFocus) {
-        FileNode fileNode = (FileNode) value;
-
-        fileListCellPanel.init(fileNode);
-        // 当某个元素被选中时，某个元素未被选中时（取消选中）
-        if (isSelected) {
-            // 设置前景色（文字颜色）为白色
-            fileListCellPanel.setForeground(Color.WHITE);
-            // 设置背景色为蓝色
-            fileListCellPanel.setBackground(Color.LIGHT_GRAY);
-            Constant.setIsSelectFileNode(fileNode);
-        } else {
-            // 设置前景色（文字颜色）为黑色
-            fileListCellPanel.setForeground(Color.BLACK);
-            // 设置背景色为白色
-            fileListCellPanel.setBackground(Color.WHITE);
-        }
-        return fileListCellPanel;
-    }
-
-}
-
-// 文件列表单元格块
+public // 文件列表单元格块
 class FileListCellPanel extends JPanel {
     private final FileOtherInformationPanel otherInformationPanel = new FileOtherInformationPanel();
     private final FileNameCellLabel fileName;
@@ -98,8 +68,7 @@ class FileListCellPanel extends JPanel {
     }
 
     // 文件名字标签
-    static class FileNameCellLabel extends JLabel
-    {
+    static class FileNameCellLabel extends JLabel {
         FileNameCellLabel() {
             this.setVisible(true);
             this.setSize(300, 50);
@@ -118,8 +87,7 @@ class FileListCellPanel extends JPanel {
     }
 
     // 文件大小标签
-    static class FileSizeCellLable extends JLabel
-    {
+    static class FileSizeCellLable extends JLabel {
         FileSizeCellLable() {
             this.setVisible(true);
             this.setSize(50, 50);
@@ -128,8 +96,7 @@ class FileListCellPanel extends JPanel {
     }
 
     // 文件日期标签
-    static class FileDateCellLabel extends JLabel
-    {
+    static class FileDateCellLabel extends JLabel {
         FileDateCellLabel() {
             this.setVisible(true);
             this.setSize(100, 50);
@@ -137,6 +104,3 @@ class FileListCellPanel extends JPanel {
         }
     }
 }
-
-
-

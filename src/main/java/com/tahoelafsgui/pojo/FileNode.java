@@ -1,10 +1,14 @@
 package com.tahoelafsgui.pojo;
 
+import lombok.Data;
+
+import java.io.File;
 import java.util.ArrayList;
 
 /**
  * @author liushen
  */
+@Data
 public class FileNode {
     // 文件名
     private String name;
@@ -16,6 +20,9 @@ public class FileNode {
     private String size = "";
     // 文件内容
     private ArrayList<String> fileContents = new ArrayList<>();
+
+    public FileNode(){
+    }
 
     public FileNode(String name, String hashVal) {
         this.name = name;
@@ -31,44 +38,7 @@ public class FileNode {
     public String toString() {
         return this.hashVal;
     }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getHashVal() {
-        return this.hashVal;
-    }
-
-    public void setHashVal(String hashVal) {
-        this.hashVal = hashVal;
-    }
-
     public boolean isDir() {
         return isDir;
-    }
-
-    public void setDir(boolean isDir) {
-        this.isDir = isDir;
-    }
-
-    public String getSize() {
-        return size;
-    }
-
-    public void setSize(String size) {
-        this.size = size;
-    }
-
-    public ArrayList<String> getFileContents() {
-        return this.fileContents;
-    }
-
-    public void setFileContents(ArrayList<String> fileContents) {
-        this.fileContents = fileContents;
     }
 }

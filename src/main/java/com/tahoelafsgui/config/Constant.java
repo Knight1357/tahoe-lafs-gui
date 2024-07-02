@@ -1,6 +1,7 @@
 package com.tahoelafsgui.config;
 
 import com.tahoelafsgui.pojo.FileNode;
+
 import java.util.ArrayList;
 
 /**
@@ -16,7 +17,7 @@ public class Constant {
     // 控制前进退回
     private static final ArrayList<String> FILE_SEQUENCE_LIST = new ArrayList<>() {
         {
-            add(USER_PATH);// 初始化链表
+            add(USER_PATH);
         }
     };
 
@@ -36,14 +37,12 @@ public class Constant {
         FILE_SEQUENCE_LIST.add(hashVal);
     }
 
-
     // 文件指向
     public static int currentFile = 0;
     // 父级文件夹路径
     private static FileNode parentNode;
     // 目前选中的文件
     private static FileNode isSelectFileNode;
-
 
     public static FileNode getParentNode() {
         return parentNode;

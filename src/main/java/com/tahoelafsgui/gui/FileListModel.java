@@ -1,4 +1,4 @@
-package com.tahoelafsgui.view;
+package com.tahoelafsgui.gui;
 
 import javax.swing.*;
 
