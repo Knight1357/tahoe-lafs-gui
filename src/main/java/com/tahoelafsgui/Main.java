@@ -402,7 +402,7 @@ public class Main {
         // 写入到data.json文件
         try {
             Gson gson = new Gson();
-            FileWriter writer = new FileWriter("data/Data.json");
+            FileWriter writer = new FileWriter("src/main/resources/data/Data.json");
             gson.toJson(fileContents, writer);
             writer.close();
         } catch (IOException e) {
@@ -416,7 +416,7 @@ public class Main {
         FileReader reader = null;
         try {
             // 读取的json文件
-            reader = new FileReader("data/Data.json");
+            reader = new FileReader("src/main/resources/data/Data.json");
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
