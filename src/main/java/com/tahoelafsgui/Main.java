@@ -1,14 +1,6 @@
 package com.tahoelafsgui;
 
-
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import com.tahoelafsgui.pojo.*;
 import com.tahoelafsgui.gui.*;
-
-
-import java.io.*;
-import java.util.HashMap;
 
 /**
  * @author liushen

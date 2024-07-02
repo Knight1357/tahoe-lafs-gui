@@ -1,6 +1,7 @@
 package com.tahoelafsgui.gui;
 
 import com.tahoelafsgui.config.Constant;
+import com.tahoelafsgui.gui.panel.FileListCellPanel;
 import com.tahoelafsgui.pojo.FileNode;
 
 import javax.swing.*;
@@ -32,7 +33,6 @@ public class FileListCellRenderer implements ListCellRenderer {
         }
         return fileListCellPanel;
     }
-
 }
 
 
