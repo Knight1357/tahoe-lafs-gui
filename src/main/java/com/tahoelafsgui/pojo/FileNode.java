@@ -19,7 +19,7 @@ public class FileNode {
     // 文件大小
     private String size = "";
     // 文件内容
-    private ArrayList<String> fileContents = new ArrayList<>();
+    private ArrayList<String> fileList = new ArrayList<>();
 
     public FileNode(){
     }
@@ -32,6 +32,10 @@ public class FileNode {
         if ("DIR".equals(substr)) {
             this.isDir = true;
         }
+    }
+
+    public void addFile(String newUrl){
+        fileList.add(newUrl);
     }
 
     @Override

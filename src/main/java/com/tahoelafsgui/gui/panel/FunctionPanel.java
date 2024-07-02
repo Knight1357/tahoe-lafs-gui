@@ -12,6 +12,8 @@ import java.awt.*;
 // 功能模块
 public class FunctionPanel extends JPanel {
 
+    public static JTextField searchTextField = new JTextField();
+
     public FunctionPanel() {
         // 功能模块设置
         setVisible(true);
@@ -38,7 +40,6 @@ public class FunctionPanel extends JPanel {
 
 
         // 搜索文本框
-        JTextField searchTextField = new JTextField();
         searchTextField.setVisible(true);
         searchTextField.setSize(400, 35);
         searchTextField.setPreferredSize(new Dimension(400, 35));

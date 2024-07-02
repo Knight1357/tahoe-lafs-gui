@@ -6,16 +6,15 @@ import javax.swing.*;
  * @author liushen
  */
 public class MouseRightPopupMenu extends JPopupMenu {
-    public  MouseRightPopupMenu()
-    {
+    public MouseRightPopupMenu() {
         super();
-        JMenuItem open=new JMenuItem("打开");
-        JMenuItem download=new JMenuItem("下载");
-        JMenuItem copy=new JMenuItem("复制");
-        JMenuItem paste=new JMenuItem("粘贴");
-        JMenuItem shear=new JMenuItem("剪切");
-        JMenuItem rename=new JMenuItem("重命名");
-        JMenuItem delete=new JMenuItem("删除");
+        JMenuItem open = new JMenuItem("打开");
+        JMenuItem download = new JMenuItem("下载");
+        JMenuItem copy = new JMenuItem("复制");
+        JMenuItem paste = new JMenuItem("粘贴");
+        JMenuItem shear = new JMenuItem("剪切");
+        JMenuItem rename = new JMenuItem("重命名");
+        JMenuItem delete = new JMenuItem("删除");
 
         this.add(open);
         this.add(download);

@@ -14,7 +14,6 @@ public class ConfigUtil {
         try (InputStream input = ConfigUtil.class.getClassLoader().getResourceAsStream("config.properties")) {
             if (input == null) {
                 System.out.println("Sorry, unable to find config.properties");
-                return;
             }
             properties.load(input);
         } catch (IOException ex) {

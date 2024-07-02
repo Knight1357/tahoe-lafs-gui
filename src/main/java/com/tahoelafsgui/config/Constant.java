@@ -1,6 +1,7 @@
 package com.tahoelafsgui.config;
 
 import com.tahoelafsgui.pojo.FileNode;
+import lombok.Getter;
 
 import java.util.ArrayList;
 
@@ -21,7 +22,7 @@ public class Constant {
         }
     };
 
-    public static String getIntroducerAPI() {
+    public static String getIntroducerApi() {
         return INTRODUCER_IP;
     }
 
@@ -40,13 +41,12 @@ public class Constant {
     // 文件指向
     public static int currentFile = 0;
     // 父级文件夹路径
+    @Getter
     private static FileNode parentNode;
+    // 获得目前选中的文件
     // 目前选中的文件
+    @Getter
     private static FileNode isSelectFileNode;
-
-    public static FileNode getParentNode() {
-        return parentNode;
-    }
 
     public static void setParentNode(FileNode parentNode) {
         Constant.parentNode = parentNode;
@@ -55,11 +55,6 @@ public class Constant {
     // 获得根目录路径
     public static String getUserPath() {
         return USER_PATH;
-    }
-
-    // 获得目前选中的文件
-    public static FileNode getIsSelectFileNode() {
-        return isSelectFileNode;
     }
 
     // 设置当前选中的文件

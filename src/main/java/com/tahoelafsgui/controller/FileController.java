@@ -2,6 +2,8 @@ package com.tahoelafsgui.controller;
 
 import com.tahoelafsgui.Main;
 import com.tahoelafsgui.config.Constant;
+import com.tahoelafsgui.gui.panel.FunctionPanel;
+import com.tahoelafsgui.pojo.FileStructure;
 
 import javax.swing.*;
 import java.io.*;
@@ -17,7 +19,7 @@ public class FileController {
         System.out.println("创建文件夹");
 
         String hashVal = Constant.getParentNode().getHashVal();
-        String urlString = "https://" + Constant.getIntroducerAPI() + "/uri/" + URLEncoder.encode(hashVal, StandardCharsets.UTF_8) + "?t=mkdir&name=" + URLEncoder.encode(fileName, StandardCharsets.UTF_8);
+        String urlString = "https://" + Constant.getIntroducerApi() + "/uri/" + URLEncoder.encode(hashVal, StandardCharsets.UTF_8) + "?t=mkdir&name=" + URLEncoder.encode(fileName, StandardCharsets.UTF_8);
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("POST");
@@ -39,8 +41,8 @@ public class FileController {
             // 输出文件节点
             System.out.println(newFilehashVal);
             // 更新文件
-            Main.addFileNode(fileName, newFilehashVal);
-            Main.loadDir(hashVal);
+            FileStructure.addFileNode(fileName, newFilehashVal);
+            FileListController.loadDir(hashVal);
         } else {
             // 请求失败
             System.out.println("HTTP请求失败，错误码为：" + responseCode);
@@ -57,7 +59,7 @@ public class FileController {
         String hashVal = Constant.getIsSelectFileNode().getHashVal();
         // 获取文件名
         String fileName = Constant.getIsSelectFileNode().getName();
-        String urlString = "https://" + Constant.getIntroducerAPI() + "/uri/" + URLEncoder.encode(hashVal, StandardCharsets.UTF_8);
+        String urlString = "https://" + Constant.getIntroducerApi() + "/uri/" + URLEncoder.encode(hashVal, StandardCharsets.UTF_8);
 
         URL url = new URL(urlString);
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -97,14 +99,14 @@ public class FileController {
     public static void searchFile() {
         System.out.println("搜索文件");
         // 获取搜索框内容
-        String hashVal = Main.searchTextField.getText();
+        String hashVal = FunctionPanel.searchTextField.getText();
         System.out.println("查询" + hashVal);
         // 如果存在这个文件
-        if (Main.fileContents.containsKey(hashVal)) {
-            Main.loadDir(hashVal);
+        if (FileStructure.getFileStructure().containsKey(hashVal)) {
+            FileListController.loadDir(hashVal);
         } else {
             // 不存在
-            Main.loadDir(hashVal);
+            FileListController.loadDir(hashVal);
         }
     }
 
@@ -113,7 +115,7 @@ public class FileController {
         if (Constant.getIsSelectFileNode().isDir()) {
             Constant.addFileLocationNode(Constant.getIsSelectFileNode().getHashVal());
             Constant.currentFile++;
-            Main.loadDir(Constant.getIsSelectFileNode().getHashVal());
+            FileListController.loadDir(Constant.getIsSelectFileNode().getHashVal());
         }
     }
 
@@ -126,7 +128,7 @@ public class FileController {
     // 回到主页
     public static void goToHome() {
         System.out.println("回到主页");
-        Main.loadDir(Constant.getUserPath());
+        FileListController.loadDir(Constant.getUserPath());
         System.out.println("成功回到主页");
     }
 
@@ -135,7 +137,7 @@ public class FileController {
         System.out.println("向前");
         if (Constant.currentFile < Constant.getFileLocationListSize() - 1) {
             Constant.currentFile++;
-            Main.loadDir(Constant.getFileLocationNode(Constant.currentFile));
+            FileListController.loadDir(Constant.getFileLocationNode(Constant.currentFile));
             System.out.println("成功向前");
         }
     }
@@ -145,7 +147,7 @@ public class FileController {
         System.out.println("后退");
         if (Constant.currentFile > 0) {
             Constant.currentFile--;
-            Main.loadDir(Constant.getFileLocationNode(Constant.currentFile));
+            FileListController.loadDir(Constant.getFileLocationNode(Constant.currentFile));
             System.out.println("成功退回");
         }
     }
