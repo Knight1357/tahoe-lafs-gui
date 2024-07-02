@@ -7,7 +7,8 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-public class BinaryFileViewTest {//下载二进制文件
+// 下载二进制文件
+public class BinaryFileViewTest {
     public static void main(String[] args) throws Exception {
 
 
