@@ -13,7 +13,6 @@ public class Constant {
     // 用户根目录路径
     private static final String USER_PATH = "URI:DIR2:wti64bj6ovkrubpngomrldezpi:i7xev2c7bgrsu4remvipyeqzsb2qbrcbgteywvcijx5qetbc4pka";
 
-    private static final String INTRODUCER_IP = "127.0.0.1:3456";
 
     // 控制前进退回
     private static final ArrayList<String> FILE_SEQUENCE_LIST = new ArrayList<>() {
@@ -22,9 +21,6 @@ public class Constant {
         }
     };
 
-    public static String getIntroducerApi() {
-        return INTRODUCER_IP;
-    }
 
     public static String getFileLocationNode(int index) {
         return FILE_SEQUENCE_LIST.get(index);
