@@ -13,6 +13,7 @@ import java.util.HashMap;
 /**
  * @author liushen
  */
+// Json 读取转换工具
 public class JsonUtil {
     private static JsonUtil instance;
     private final Gson gson;
