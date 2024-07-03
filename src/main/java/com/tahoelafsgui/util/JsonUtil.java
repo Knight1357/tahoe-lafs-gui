@@ -5,9 +5,9 @@ import com.google.gson.JsonIOException;
 import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.tahoelafsgui.pojo.FileNode;
-import com.tahoelafsgui.pojo.FileStructure;
 
 import java.io.*;
+import java.lang.reflect.Type;
 import java.util.HashMap;
 
 /**
@@ -58,6 +58,38 @@ public class JsonUtil {
     // 将对象转换为 JSON 字符串
     public String toJsonString(Object src) {
         return gson.toJson(src);
+    }
+
+    // 将 JSON 文件转换为 HashMap<String, FileNode>
+    public HashMap<String, FileNode> fromJsonFileToMap(HashMap<String, FileNode> hashMap, String filePath) throws IOException {
+        try (Reader reader = new FileReader(filePath)) {
+            Type type = new TypeToken<HashMap<String, FileNode>>() {
+            }.getType();
+            return gson.fromJson(reader, type);
+        } catch (JsonIOException | JsonSyntaxException e) {
+            throw new IOException("Failed to parse JSON from file", e);
+        }
+    }
+
+    // 将 HashMap<String, FileNode> 转换为 JSON 文件
+    public void toJsonFileFromMap(HashMap<String, FileNode> map, String filePath) throws IOException {
+        try (Writer writer = new FileWriter(filePath)) {
+            gson.toJson(map, writer);
+        } catch (JsonIOException e) {
+            throw new IOException("Failed to write JSON to file", e);
+        }
+    }
+
+    // 将 JSON 字符串转换为 HashMap<String, FileNode>
+    public HashMap<String, FileNode> fromJsonStringToMap(String jsonString) {
+        Type type = new TypeToken<HashMap<String, FileNode>>() {
+        }.getType();
+        return gson.fromJson(jsonString, type);
+    }
+
+    // 将 HashMap<String, FileNode> 转换为 JSON 字符串
+    public String toJsonStringFromMap(HashMap<String, FileNode> map) {
+        return gson.toJson(map);
     }
 }
 
