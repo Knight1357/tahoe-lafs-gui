@@ -4,7 +4,6 @@ import com.tahoelafsgui.config.Constant;
 import com.tahoelafsgui.gui.panel.FileScrollPanel;
 import com.tahoelafsgui.pojo.FileNode;
 import com.tahoelafsgui.pojo.FileStructure;
-import com.tahoelafsgui.util.JsonUtil;
 
 /**
  * @author liushen

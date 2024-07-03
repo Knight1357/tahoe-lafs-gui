@@ -1,7 +1,8 @@
 package com.tahoelafsgui.gui.panel;
 
+import com.tahoelafsgui.command.Command;
+import com.tahoelafsgui.command.CreateFinderCommand;
 import com.tahoelafsgui.config.Constant;
-import com.tahoelafsgui.controller.FileController;
 
 import javax.swing.*;
 import java.awt.*;
@@ -14,14 +15,15 @@ public class FunctionPanel extends JPanel {
 
     public static JTextField searchTextField = new JTextField();
 
-    public FunctionPanel() {
+    public FunctionPanel() throws Exception {
         // 功能模块设置
         setVisible(true);
         setSize(600, 100);
         setPreferredSize(new Dimension(600, 100));
         setLayout(new BorderLayout());
-
         InformationPanel informationPanel = new InformationPanel();
+        Command command =new CreateFinderCommand();
+        command.execute();
 
 
         // 文件操作模块
@@ -114,9 +116,9 @@ public class FunctionPanel extends JPanel {
         fileSwitchPanel.setPreferredSize(new Dimension(300, 60));
         fileSwitchPanel.setLayout(new GridLayout(1, 3, 0, 0));
 
-        // home 按钮
+        // 主页 按钮
         JButton homeButton = new JButton();
-        homeButton.setText("home");
+        homeButton.setText("主页");
         homeButton.setSize(80, 35);
         homeButton.setPreferredSize(new Dimension(80, 35));
         homeButton.addActionListener(e -> FileController.goToHome());

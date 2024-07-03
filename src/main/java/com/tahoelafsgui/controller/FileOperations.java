@@ -7,15 +7,20 @@ import com.tahoelafsgui.util.ConfigUtil;
 
 import javax.swing.*;
 import java.io.*;
-import java.net.*;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
 /**
  * @author liushen
  */
-public class FileController {
+public class FileOperations {
+
+
     // 创建文件夹
-    public static void creatFile(String fileName) throws Exception {
+    public void createFinder() throws Exception {
+        String fileName = "TEST";
         String hashVal = Constant.getParentNode().getHashVal();
         String urlString = "https://" + ConfigUtil.getInstance().getProperty("introducer.ip") + "/uri/" + URLEncoder.encode(hashVal, StandardCharsets.UTF_8) + "?t=mkdir&name=" + URLEncoder.encode(fileName, StandardCharsets.UTF_8);
         URL url = new URL(urlString);
@@ -50,7 +55,7 @@ public class FileController {
     }
 
     // 下载文件
-    public static void downLoadFile() throws Exception {
+    public void downloadFile() throws Exception {
         // 获取选中文件的hash
         String hashVal = Constant.getIsSelectFileNode().getHashVal();
         // 获取文件名
@@ -87,12 +92,12 @@ public class FileController {
     }
 
     // 上传文件
-    public static void upLoadFile() {
+    public void uploadFile() {
         System.out.println("上传文件");
     }
 
     // 搜索文件
-    public static void searchFile() {
+    public void searchFile() {
         System.out.println("搜索文件");
         // 获取搜索框内容
         String hashVal = FunctionPanel.searchTextField.getText();
@@ -107,7 +112,7 @@ public class FileController {
     }
 
     // 双击打开文件夹
-    public static void openDir() {
+    public void openDir() {
         if (Constant.getIsSelectFileNode().isDir()) {
             Constant.addFileLocationNode(Constant.getIsSelectFileNode().getHashVal());
             Constant.currentFile++;
@@ -115,21 +120,21 @@ public class FileController {
         }
     }
 
-    public static void openFile() {
+    public void openFile() {
         if (!Constant.getIsSelectFileNode().isDir()) {
             System.out.println("打开文件");
         }
     }
 
     // 回到主页
-    public static void goToHome() {
+    public void goToHome() {
         System.out.println("回到主页");
         FileListController.loadDir(Constant.getUserPath());
         System.out.println("成功回到主页");
     }
 
     // 前进
-    public static void goToFore() {
+    public void goToFore() {
         System.out.println("向前");
         if (Constant.currentFile < Constant.getFileLocationListSize() - 1) {
             Constant.currentFile++;
@@ -139,7 +144,7 @@ public class FileController {
     }
 
     // 后退
-    public static void goToBack() {
+    public void goToBack() {
         System.out.println("后退");
         if (Constant.currentFile > 0) {
             Constant.currentFile--;
