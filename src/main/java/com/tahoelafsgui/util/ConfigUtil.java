@@ -7,13 +7,16 @@ import java.util.Properties;
 /**
  * @author liushen
  */
+// 读取配置文件
 public class ConfigUtil {
-    private static Properties properties = new Properties();
+    private final Properties properties;
 
-    static {
-        try (InputStream input = ConfigUtil.class.getClassLoader().getResourceAsStream("config.properties")) {
+    private ConfigUtil() {
+        properties = new Properties();
+        try (InputStream input = getClass().getClassLoader().getResourceAsStream("config.properties")) {
             if (input == null) {
                 System.out.println("Sorry, unable to find config.properties");
+                return;
             }
             properties.load(input);
         } catch (IOException ex) {
@@ -21,7 +24,15 @@ public class ConfigUtil {
         }
     }
 
-    public static String getProperty(String key) {
+    private static class ConfigUtilHelper {
+        private static final ConfigUtil INSTANCE = new ConfigUtil();
+    }
+
+    public static ConfigUtil getInstance() {
+        return ConfigUtilHelper.INSTANCE;
+    }
+
+    public String getProperty(String key) {
         return properties.getProperty(key);
     }
 }
