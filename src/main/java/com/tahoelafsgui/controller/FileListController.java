@@ -12,13 +12,12 @@ import com.tahoelafsgui.util.JsonUtil;
 // 文件列表操作
 public class FileListController {
 
-
     // 读取文件夹文件
     public static void loadDir(String hashVal) {
 //        JsonUtil.toJson();
 //        JsonUtil.fromJson();
-        if (FileStructure.getFileStructure().containsKey(hashVal)) {
-            FileNode temp = FileStructure.getFileStructure().get(hashVal);
+        if (FileStructure.getInstance().getFileStructure().containsKey(hashVal)) {
+            FileNode temp = FileStructure.getInstance().getFileStructure().get(hashVal);
             if (!hashVal.isEmpty()) {
                 // 清空所有元素
                 FileScrollPanel.getFileListModel().removeAllElements();
@@ -28,7 +27,7 @@ public class FileListController {
                 // 记录父级文件夹
                 Constant.setParentNode(temp);
                 for (String i : temp.getFileList()) {
-                    FileNode cur = FileStructure.getFileStructure().get(i);
+                    FileNode cur = FileStructure.getInstance().getFileStructure().get(i);
                     FileScrollPanel.getFileListModel().addElement(cur);
                 }
             } else {

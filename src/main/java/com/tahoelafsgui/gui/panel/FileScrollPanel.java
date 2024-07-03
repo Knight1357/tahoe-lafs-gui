@@ -12,6 +12,9 @@ import javax.swing.*;
 import java.util.HashMap;
 
 
+/**
+ * @author liushen
+ */
 // 文件列表
 public class FileScrollPanel extends JScrollPane {
 
@@ -24,7 +27,7 @@ public class FileScrollPanel extends JScrollPane {
         fileListModel = new FileListModel();
 
         setVisible(true);
-        HashMap<String, FileNode> fileContents = FileStructure.getFileStructure();
+        HashMap<String, FileNode> fileContents = FileStructure.getInstance().getFileStructure();
         setVisible(true);
         // 文件列表
         FileNodeDto fileNodeDto = new FileNodeDto();

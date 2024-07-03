@@ -1,10 +1,14 @@
 package com.tahoelafsgui.gui.panel;
 
 import com.tahoelafsgui.pojo.FileNode;
+import com.tahoelafsgui.util.ConfigUtil;
 
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * @author liushen
+ */
 // 文件列表单元格块
 public class FileListCellPanel extends JPanel {
 
@@ -45,9 +49,9 @@ public class FileListCellPanel extends JPanel {
         ImageIcon imageIcon;
         // 设置图标种类
         if (fileNode.isDir()) {
-            imageIcon = new ImageIcon("image/wenjianjia.png");
+            imageIcon = new ImageIcon(ConfigUtil.getInstance().getProperty("pics.path") + "/finder.png");
         } else {
-            imageIcon = new ImageIcon("image/wenjian.png");
+            imageIcon = new ImageIcon(ConfigUtil.getInstance().getProperty("pics.path") + "/file.png");
         }
 
         // 设置图标大小属性

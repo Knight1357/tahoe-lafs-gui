@@ -11,4 +11,3 @@ import java.util.List;
 public class FileNodeDto extends FileNode {
     private List<FileNode> fileNodeList;
 }
-
