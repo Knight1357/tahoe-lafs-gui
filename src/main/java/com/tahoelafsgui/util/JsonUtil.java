@@ -1,54 +1,63 @@
 package com.tahoelafsgui.util;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonIOException;
+import com.google.gson.JsonSyntaxException;
 import com.google.gson.reflect.TypeToken;
 import com.tahoelafsgui.pojo.FileNode;
 import com.tahoelafsgui.pojo.FileStructure;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.HashMap;
 
 /**
  * @author liushen
  */
 public class JsonUtil {
-    static Gson gson;
+    private static JsonUtil instance;
+    private final Gson gson;
 
-    public JsonUtil() {
+    private JsonUtil() {
         gson = new Gson();
     }
 
-    // 写入json文件
-    public static void toJson() {
-        // 写入到data.json文件
-        try {
-            FileWriter writer = new FileWriter("src/main/resources/data/Data.json");
-            gson.toJson(FileStructure.getFileStructure(), writer);
-            writer.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+    public static JsonUtil getInstance() {
+        if (instance == null) {
+            synchronized (JsonUtil.class) {
+                if (instance == null) {
+                    instance = new JsonUtil();
+                }
+            }
+        }
+        return instance;
+    }
+
+    // 将 JSON 文件转换为对象
+    public <T> T fromJsonFile(String filePath, Class<T> classOfT) throws IOException {
+        try (Reader reader = new FileReader(filePath)) {
+            return gson.fromJson(reader, classOfT);
+        } catch (JsonIOException | JsonSyntaxException e) {
+            throw new IOException("Failed to parse JSON from file", e);
         }
     }
 
-    // 读取json文件
-    public static void fromJson() {
-        // 读取json
-        FileReader reader = null;
-        try {
-            // 读取的json文件
-            reader = new FileReader("src/main/resources/data/Data.json");
-        } catch (FileNotFoundException e) {
-            throw new RuntimeException(e);
-        }
-        FileStructure.setFileStructure(gson.fromJson(reader, new TypeToken<HashMap<String, FileNode>>() {
-        }.getType()));
-        try {
-            reader.close();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
+    // 将对象转换为 JSON 文件
+    public void toJsonFile(Object src, String filePath) throws IOException {
+        try (Writer writer = new FileWriter(filePath)) {
+            gson.toJson(src, writer);
+        } catch (JsonIOException e) {
+            throw new IOException("Failed to write JSON to file", e);
         }
     }
+
+    // 将 JSON 字符串转换为对象
+    public <T> T fromJsonString(String jsonString, Class<T> classOfT) {
+        return gson.fromJson(jsonString, classOfT);
+    }
+
+    // 将对象转换为 JSON 字符串
+    public String toJsonString(Object src) {
+        return gson.toJson(src);
+    }
 }
+
