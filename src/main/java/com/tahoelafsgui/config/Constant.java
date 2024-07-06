@@ -18,6 +18,7 @@ public class Constant {
             add(USER_PATH);
         }
     };
+
     public static String getFileLocationNode(int index) {
         return FILE_SEQUENCE_LIST.get(index);
     }
@@ -35,7 +36,6 @@ public class Constant {
     // 父级文件夹路径
     @Getter
     private static FileNode parentNode;
-    // 获得目前选中的文件
     // 目前选中的文件
     @Getter
     private static FileNode isSelectFileNode;

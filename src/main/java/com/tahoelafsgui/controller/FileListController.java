@@ -13,8 +13,6 @@ public class FileListController {
 
     // 读取文件夹文件
     public static void loadDir(String hashVal) {
-//        JsonUtil.toJson();
-//        JsonUtil.fromJson();
         if (FileStructure.getInstance().getFileStructure().containsKey(hashVal)) {
             FileNode temp = FileStructure.getInstance().getFileStructure().get(hashVal);
             if (!hashVal.isEmpty()) {

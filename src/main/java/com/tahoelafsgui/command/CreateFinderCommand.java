@@ -5,10 +5,10 @@ import com.tahoelafsgui.controller.FileOperations;
 /**
  * @author liushen
  */
-public class CreateFinderCommand implements Command{
+public class CreateFinderCommand implements Command {
     private FileOperations fileOperations;
 
-    public CreateFinderCommand() {
+    public CreateFinderCommand(FileOperations fileOperations) {
         this.fileOperations = fileOperations;
     }
 

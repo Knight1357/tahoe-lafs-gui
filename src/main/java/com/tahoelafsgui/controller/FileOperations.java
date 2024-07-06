@@ -109,6 +109,7 @@ public class FileOperations {
             // 不存在
             FileListController.loadDir(hashVal);
         }
+        System.out.println("搜索成功");
     }
 
     // 双击打开文件夹
@@ -127,14 +128,14 @@ public class FileOperations {
     }
 
     // 回到主页
-    public void goToHome() {
+    public void goHome() {
         System.out.println("回到主页");
         FileListController.loadDir(Constant.getUserPath());
         System.out.println("成功回到主页");
     }
 
     // 前进
-    public void goToFore() {
+    public void goFront() {
         System.out.println("向前");
         if (Constant.currentFile < Constant.getFileLocationListSize() - 1) {
             Constant.currentFile++;
@@ -144,7 +145,7 @@ public class FileOperations {
     }
 
     // 后退
-    public void goToBack() {
+    public void goBack() {
         System.out.println("后退");
         if (Constant.currentFile > 0) {
             Constant.currentFile--;

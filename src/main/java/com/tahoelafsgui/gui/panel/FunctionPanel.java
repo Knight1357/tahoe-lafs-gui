@@ -1,11 +1,15 @@
 package com.tahoelafsgui.gui.panel;
 
-import com.tahoelafsgui.command.Command;
-import com.tahoelafsgui.command.CreateFinderCommand;
+import com.tahoelafsgui.command.*;
 import com.tahoelafsgui.config.Constant;
+import com.tahoelafsgui.controller.FileOperations;
+import com.tahoelafsgui.factory.ButtonFactory;
+import com.tahoelafsgui.factory.FileButtonFactory;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 /**
  * @author liushen
@@ -13,28 +17,44 @@ import java.awt.*;
 // 功能模块
 public class FunctionPanel extends JPanel {
 
+    private JButton searchButton;
+    private JButton uploadButton;
+    private JButton downloadButton;
+    private JButton makeDirectoryButton;
+    private JButton homeButton;
+    private JButton foreButton;
+    private JButton backButton;
+
+    JPanel operateButtonPanel;
+    JPanel searchPanel;
+    JPanel fileSwitchPanel;
+    JPanel operatePanel;
+
+
     public static JTextField searchTextField = new JTextField();
 
-    public FunctionPanel() throws Exception {
+    public FunctionPanel() {
         // 功能模块设置
         setVisible(true);
         setSize(600, 100);
         setPreferredSize(new Dimension(600, 100));
         setLayout(new BorderLayout());
         InformationPanel informationPanel = new InformationPanel();
-        Command command =new CreateFinderCommand();
-        command.execute();
 
+        // 命令
+        FileOperations fileOperations = new FileOperations();
+        // 按钮工厂
+        ButtonFactory buttonFactory = new FileButtonFactory();
 
         // 文件操作模块
-        JPanel operatePanel = new JPanel();
+        operatePanel = new JPanel();
         operatePanel.setVisible(true);
         operatePanel.setSize(600, 80);
         operatePanel.setPreferredSize(new Dimension(600, 90));
         operatePanel.setLayout(new GridLayout(2, 1, 0, 0));
 
         // 文件搜索块
-        JPanel searchPanel = new JPanel();
+        searchPanel = new JPanel();
         searchPanel.setVisible(true);
         searchPanel.setSize(600, 40);
         searchPanel.setPreferredSize(new Dimension(600, 40));
@@ -47,95 +67,54 @@ public class FunctionPanel extends JPanel {
         searchTextField.setPreferredSize(new Dimension(400, 35));
 
         // 搜索按钮
-        JButton searchButton = new JButton();
-        searchButton.setText("搜索文件");
+        searchButton = buttonFactory.createButton("搜索文件", new SearchCommand(fileOperations));
         searchButton.setSize(80, 35);
         searchButton.setPreferredSize(new Dimension(80, 35));
-        searchButton.addActionListener(e -> FileController.searchFile());
-
 
         // 文件操作按钮块
-        JPanel operateButtonPanel = new JPanel();
+        operateButtonPanel = new JPanel();
         operateButtonPanel.setVisible(true);
         operateButtonPanel.setSize(400, 40);
         operateButtonPanel.setPreferredSize(new Dimension(400, 40));
         operateButtonPanel.setLayout(new FlowLayout(FlowLayout.LEFT));
 
         // 上传文件按钮
-        JButton uploadButton = new JButton();
-        uploadButton.setText("上传文件");
+        uploadButton = buttonFactory.createButton("上传文件", new UploadCommand(fileOperations));
         uploadButton.setSize(80, 35);
         uploadButton.setPreferredSize(new Dimension(80, 35));
-        uploadButton.addActionListener(e -> FileController.upLoadFile());
 
 
         // 下载文件按钮
-        JButton downloadButton = new JButton();
-        downloadButton.setText("下载文件");
+        downloadButton = buttonFactory.createButton("下载文件", new DownloadCommand(fileOperations));
         downloadButton.setSize(80, 35);
         downloadButton.setPreferredSize(new Dimension(80, 35));
-        downloadButton.addActionListener(e -> {
-            // 不是文件夹可以下载
-            if (!Constant.getIsSelectFileNode().isDir()) {
-                try {
-                    System.out.println("下载文件正常");
-                    FileController.downLoadFile();
-                } catch (Exception ex) {
-                    System.out.println("下载文件异常");
-                    throw new RuntimeException(ex);
-                }
-            } else {
-                JOptionPane.showMessageDialog(null, "下载失败\n无法下载文件夹");
-            }
-        });
 
         // 新建文件按钮
-        JButton makeDirectoryButton = new JButton();
-        makeDirectoryButton.setText("新建文件");
+        makeDirectoryButton = buttonFactory.createButton("新建文件", new CreateFinderCommand(fileOperations));
         makeDirectoryButton.setSize(80, 35);
         makeDirectoryButton.setPreferredSize(new Dimension(80, 35));
-        // 新建文件
-        makeDirectoryButton.addActionListener(e -> {
-            String str = JOptionPane.showInputDialog(null, "请输入文件名称：\n", "新建文件", JOptionPane.PLAIN_MESSAGE);
-            System.out.println(str);
-            if (!str.isEmpty()) {
-                try {
-                    System.out.println("新建文件正常");
-                    FileController.creatFile(str);
-                } catch (Exception ex) {
-                    System.out.println("新建文件异常");
-                    throw new RuntimeException(ex);
-                }
-            }
-        });
 
         // 文件切换
-        JPanel fileSwitchPanel = new JPanel();
+        fileSwitchPanel = new JPanel();
         fileSwitchPanel.setVisible(true);
         fileSwitchPanel.setSize(300, 60);
         fileSwitchPanel.setPreferredSize(new Dimension(300, 60));
         fileSwitchPanel.setLayout(new GridLayout(1, 3, 0, 0));
 
         // 主页 按钮
-        JButton homeButton = new JButton();
-        homeButton.setText("主页");
+        homeButton = buttonFactory.createButton("主页", new HomeCommand(fileOperations));
         homeButton.setSize(80, 35);
         homeButton.setPreferredSize(new Dimension(80, 35));
-        homeButton.addActionListener(e -> FileController.goToHome());
 
         // 前按钮
-        JButton foreButton = new JButton();
-        foreButton.setText("前进");
+        foreButton = buttonFactory.createButton("前进", new FrontCommand(fileOperations));
         foreButton.setSize(80, 35);
         foreButton.setPreferredSize(new Dimension(80, 35));
-        foreButton.addActionListener(e -> FileController.goToFore());
 
         // 退回按钮
-        JButton backButton = new JButton();
-        backButton.setText("退回");
+        backButton = buttonFactory.createButton("退回", new BackCommand(fileOperations));
         backButton.setSize(80, 35);
         backButton.setPreferredSize(new Dimension(80, 35));
-        backButton.addActionListener(e -> FileController.goToBack());
 
         // 添加文件操作块
         add(operatePanel, BorderLayout.WEST);
